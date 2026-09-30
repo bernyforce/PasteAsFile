@@ -79,6 +79,7 @@
 				1C672EE747A05C6D18B3DD80 /* PasteLogic.swift */,
 			);
 			name = PasteAsFileCore;
+			path = PasteAsFileCore;
 			sourceTree = "<group>";
 		};
 		2A7F0DFEAD8AC7ED3865D813 = {
@@ -125,6 +126,7 @@
 				8415DBB230F1353404AB03FE /* PasteAsFileFinder.entitlements */,
 			);
 			name = PasteAsFileFinder;
+			path = PasteAsFileFinder;
 			sourceTree = "<group>";
 		};
 		D01A6ED97362F33764E7AAC3 /* PasteAsFile */ = {
@@ -135,6 +137,7 @@
 				FF358538E729F012D25C2FEC /* Info.plist */,
 			);
 			name = PasteAsFile;
+			path = PasteAsFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
