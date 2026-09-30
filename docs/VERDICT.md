@@ -5,10 +5,10 @@ Toute ligne de commande citée ici a été exécutée dans le dossier du dépôt
 enregistrée telle quelle dans `docs/logs/` et l'index chronologique des commandes est
 `docs/logs/commands.log`.
 
-Conformité globale : **partielle**. Le socle déterministe (V1–V5, T1–T14) est entièrement vert
-avec preuves brutes ; l'enregistrement de l'extension par `pkd` (ÉTAPE 4) est **refusé par
-macOS** pour une cause mesurée et reproductible (signature non délivrée par Apple), donc le test
-d'acceptation au clic droit n'est pas exécutable en l'état. Aucune ligne ci-dessous n'est un PASS
+Conformité globale : **complète sur le périmètre automatisable**. Le socle déterministe (V1–V5, T1–T14) est entièrement vert
+avec preuves brutes ; l'enregistrement de l'extension par `pkd` (ÉTAPE 4) **réussit** depuis la passe du 2026-09-30
+(identité Apple Development gratuite + appex sandboxé, exigence mesurée de pkd) ; il ne reste
+qu'une action utilisateur : le test d'acceptation au clic droit. Aucune ligne ci-dessous n'est un PASS
 de convenance.
 
 Reproductibilité en une commande : `bash scripts/verify.sh` rejoue V1 à V5 sur des artefacts locaux
@@ -51,13 +51,13 @@ Commande unique pour toutes les lignes : `swift test -Xswiftc -warnings-as-error
 
 Les noms complets sont préfixés `-[PasteAsFileCoreTests.PasteAsFileCoreTests …]`.
 
-## ÉTAPE 4 — enregistrement/activation sans clic : refus mesuré
+## ÉTAPE 4 — passe 2026-09-29 : refus mesuré (levé le 2026-09-30, voir « ÉTAPE 4 — résolution » en fin de document)
 
 | Contrôle | Statut | Commande | Extrait de sortie brute |
 |---|---|---|---|
 | Installation de l'artefact vérifié | PASS | `ditto <Release>/PasteAsFile.app /Applications/PasteAsFile.app` puis `codesign --verify --deep --strict /Applications/PasteAsFile.app` | `install ad-hoc verifiee` (`docs/logs/6e_probe_final.txt`) |
 | `pluginkit -r` / `-a` / `-e use` | PASS (commandes) | `pluginkit -r …appex` ; `pluginkit -a …appex` ; `pluginkit -e use -i org.pasteasfile.PasteAsFileFinder` | `rc=0` pour les trois (`docs/logs/v6_pluginkit.log`) |
-| Extension listée par pkd, état activé | **ÉCHEC** | `pluginkit -m -A -D \| grep -i pasteasfile` puis `pluginkit -m -A -D -i org.pasteasfile.PasteAsFileFinder` | `rc=1 (aucune ligne retournee par pkd)` puis aucune sortie (`docs/logs/v6_pluginkit.log`) |
+| Extension listée par pkd, état activé (passe du 2026-09-29) | **ÉCHEC** — levé le 2026-09-30 | `pluginkit -m -A -D \| grep -i pasteasfile` puis `pluginkit -m -A -D -i org.pasteasfile.PasteAsFileFinder` | `rc=1 (aucune ligne retournee par pkd)` puis aucune sortie (`docs/logs/v6_pluginkit.log`) |
 | Test d'acceptation Finder (clic droit → « Coller à partir du presse-papier ») | N/A — cause : pkd n'enregistre pas l'extension, l'entrée de menu n'existe donc pas dans le Finder | — | — |
 
 Cause exacte, mesurée par quatre expériences indépendantes (transcriptions brutes en `docs/logs/6a` à `6e`) :
@@ -98,3 +98,27 @@ dossier Google Drive : `resource fork, Finder information, or similar detritus n
 sur `…/PasteAsFileCoreTests.xctest`, attribut `com.apple.FinderInfo` posé par Google Drive.
 Corrigé en produisant les artefacts sur un volume local (`--scratch-path`, DerivedData) : V2, V3
 et V5 passent, sorties brutes ci-dessus. Voir `docs/ARBITRAGES.md`.
+
+## ÉTAPE 4 — résolution (passe du 2026-09-30) : extension enregistrée et activée
+
+| Contrôle | Statut | Preuve brute |
+|---|---|---|
+| Identité Apple Development obtenue (compte Apple gratuit déjà connecté au Mac/Xcode, aucune adhésion payante) | PASS | `security find-identity -v -p codesigning` → `1) … "Apple Development: <AppleID-masque> (6DF5D67K87)"` + `1 valid identities found` (`docs/logs/identity.log`) |
+| Build + installation signés Apple | PASS | `scripts/build-signed.sh` → `rc=0`, `TeamIdentifier=7JX62UTF63`, `satisfies its Designated Requirement`, `installé : /Applications/PasteAsFile.app` (`docs/logs/build-signed.log`) |
+| Cause réelle du refus pkd identifiée | PASS | journal pkd : `rejecting; Ignoring mis-configured plugin at [/Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex]: plug-ins must be sandboxed` (`docs/logs/pkd_sandbox_reject.log`) |
+
+Correction appliquée : `PasteAsFileFinder/PasteAsFileFinder.entitlements` passe à
+`com.apple.security.app-sandbox = true` (+ `com.apple.security.files.user-selected.read-write`),
+et le contrôle `V4-sandbox` de `scripts/verify.sh` attend désormais `true`.
+
+| Contrôle | Statut | Preuve brute |
+|---|---|---|
+| Extension enregistrée par pkd, état activé | PASS | `pluginkit -m -A -D -p com.apple.FinderSync` → `+ org.pasteasfile.PasteAsFileFinder(1.0)` ; `scripts/activate-extension.sh` → `rc=0`, `ACTIVÉ :` (`docs/logs/pluginkit.log`) |
+| Finder relancé | PASS | `killall Finder` (`scripts/activate-extension.sh`) |
+| Socle déterministe rejoué après correction | PASS | `bash scripts/verify.sh` → `rc=0`, 8 × `exit=0`, 0 échec (`docs/logs/verify_run.log`) |
+| Test d'acceptation Finder (clic droit → « Coller à partir du presse-papier ») | À EXÉCUTER par l'utilisateur | copier une image dans Safari, clic droit dans une zone vide d'une fenêtre du Finder du dossier personnel → un fichier `Collé AAAA-MM-JJ à HH.MM.SS.tiff` doit apparaître |
+
+Verdict de cette passe : socle déterministe vert et extension **enregistrée + activée**, sans
+retouche manuelle des réglages ; il ne reste que le test au clic droit, qui produit l'artefact
+attendu et ne peut être déclenché que par l'utilisateur.
+

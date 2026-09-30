@@ -1,0 +1,2 @@
+2026-09-30 06:53:42.194 E  pkd[86483:8d3b29] [com.apple.PlugInKit:discovery] [d <private>] [u 361CA8CB-D096-55A6-B5D4-C7D72DF3CB94] [<private>(1)] rejecting; Ignoring mis-configured plugin at [/System/Library/ExtensionKit/Extensions/ImageThumbnailExtension.appex]: plug-ins must be sandboxed
+2026-09-30 06:53:42.196 E  pkd[86483:8d3b29] [com.apple.PlugInKit:discovery] [d <private>] [u 4106F195-732D-5C85-9934-30E1A579E170] [<private>(<private>)] rejecting; Ignoring mis-configured plugin at [/System/Library/ExtensionKit/Extensions/LockScreen.appex]: plug-ins must be sandboxed

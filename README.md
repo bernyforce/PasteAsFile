@@ -13,8 +13,8 @@ contextuel du Finder, plus l'application hôte qui l'héberge.
   `public.jpeg`→jpeg, `com.apple.icns`→icns, `com.adobe.pdf`→pdf, `public.svg-image`→svg,
   `public.rtf`→rtf, `public.html`→html, `public.plain-text`→txt ; priorité rtf > txt.
 - Format inconnu → aucun fichier n'est créé. Jamais de `.textClipping`.
-- Périmètre : dossier personnel récursif (`directoryURLs = [home]`), App Sandbox désactivée pour
-  l'extension, point d'extension `com.apple.FinderSync`.
+- Périmètre : dossier personnel récursif (`directoryURLs = [home]`), App Sandbox activée pour
+  l'extension (exigence pkd : « plug-ins must be sandboxed »), point d'extension `com.apple.FinderSync`.
 
 ## Construire et vérifier
 

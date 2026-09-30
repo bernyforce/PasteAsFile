@@ -1,0 +1,37 @@
+### PHASE 0 2026-09-30T10:37:27Z
+$ security find-identity -v -p codesigning
+     0 valid identities found
+rc=0
+
+$ xcodebuild -version / xcode-select -p
+Xcode 27.0
+Build version 27A266a
+/Applications/Xcode.app/Contents/Developer
+
+$ ls ~/Library/MobileDevice/Provisioning\ Profiles/
+ls: /Users/bf/Library/MobileDevice/Provisioning Profiles/: No such file or directory
+
+$ defaults read com.apple.dt.Xcode IDEProvisioningTeamByIdentifier
+2026-09-30 06:37:28.252 defaults[86670:9214567] 
+The domain/default pair of (com.apple.dt.Xcode, IDEProvisioningTeamByIdentifier) does not exist
+
+### comptes Apple côté système 2026-09-30T10:37:32Z
+$ defaults read MobileMeAccounts  (extrait) 
+            AccountID = "<AppleID-masque>";
+            primaryEmailVerified = 1;
+rc=0
+
+$ ~/Library/Preferences/MobileMeAccounts.plist (clés)
+      "AccountID" => "<AppleID-masque>"
+      "primaryEmailVerified" => true
+
+$ Xcode : comptes déclarés (clés seulement)
+rc=0
+
+$ Xcode UserData / provisionnement
+total 8
+drwxr-xr-x  5 bf  staff   160 sept. 10 21:24 .
+drwxr-xr-x  6 bf  staff   192 sept. 11 03:01 ..
+-rw-r--r--  1 bf  staff  2335 sept. 10 21:24 IDEEditorInteractivityHistory
+drwxr-xr-x  3 bf  staff    96 août  23 22:21 KeyBindings
+drwxr-xr-x  5 bf  staff   160 août  26 06:41 XcodeCloud

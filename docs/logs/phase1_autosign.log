@@ -1,0 +1,42 @@
+### 2026-09-30 06:53:00 xcodebuild auto-sign TEAM=7JX62UTF63 (sans timeout)
+CodeSign /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app (in target 'PasteAsFile' from project 'PasteAsFile')
+    cd /Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon\ Drive/Formation/Collège\ BDEB/ETE_2026/420-A60-BB\ ALGORITHMES\ D\'APPRENTISSAGE\ PROFOND/Examen\ Final/PasteAsFile
+    
+    Signing Identity:     "Apple Development: <AppleID-masque> (6DF5D67K87)"
+    
+    /usr/bin/codesign --force --sign 3ED1F3250F80E833F8B41E7E0F8980533CC0B5E1 --entitlements /tmp/pasteasfile-build/xcode-signed/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/PasteAsFile.app.xcent --timestamp\=none --generate-entitlement-der /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app
+
+ValidateEmbeddedBinary /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex (in target 'PasteAsFile' from project 'PasteAsFile')
+    cd /Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon\ Drive/Formation/Collège\ BDEB/ETE_2026/420-A60-BB\ ALGORITHMES\ D\'APPRENTISSAGE\ PROFOND/Examen\ Final/PasteAsFile
+    /Applications/Xcode.app/Contents/Developer/usr/bin/embeddedBinaryValidationUtility /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex -signing-cert 3ED1F3250F80E833F8B41E7E0F8980533CC0B5E1 -info-plist-path /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app/Contents/Info.plist
+
+RegisterExecutionPolicyException /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app (in target 'PasteAsFile' from project 'PasteAsFile')
+    cd /Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon\ Drive/Formation/Collège\ BDEB/ETE_2026/420-A60-BB\ ALGORITHMES\ D\'APPRENTISSAGE\ PROFOND/Examen\ Final/PasteAsFile
+    builtin-RegisterExecutionPolicyException /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app
+
+Validate /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app (in target 'PasteAsFile' from project 'PasteAsFile')
+    cd /Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon\ Drive/Formation/Collège\ BDEB/ETE_2026/420-A60-BB\ ALGORITHMES\ D\'APPRENTISSAGE\ PROFOND/Examen\ Final/PasteAsFile
+    builtin-validationUtility /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app -no-validate-extension -infoplist-subpath Contents/Info.plist
+
+Touch /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app (in target 'PasteAsFile' from project 'PasteAsFile')
+    cd /Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon\ Drive/Formation/Collège\ BDEB/ETE_2026/420-A60-BB\ ALGORITHMES\ D\'APPRENTISSAGE\ PROFOND/Examen\ Final/PasteAsFile
+    /usr/bin/touch -c /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app
+
+RegisterWithLaunchServices /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app (in target 'PasteAsFile' from project 'PasteAsFile')
+    cd /Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon\ Drive/Formation/Collège\ BDEB/ETE_2026/420-A60-BB\ ALGORITHMES\ D\'APPRENTISSAGE\ PROFOND/Examen\ Final/PasteAsFile
+    builtin-lsregisterurl --record-path /tmp/pasteasfile-build/xcode-signed/Build/Intermediates.noindex/XCBuildData/registered-launchservices.txt -- /System/Library/Frameworks/CoreServices.framework/Versions/Current/Frameworks/LaunchServices.framework/Versions/Current/Support/lsregister -f -R -trusted /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app
+
+PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode-signed/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode-signed/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode-signed/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+** BUILD SUCCEEDED **
+
+### exit=0
+=== identities apres build ===
+  1) 3ED1F3250F80E833F8B41E7E0F8980533CC0B5E1 "Apple Development: <AppleID-masque> (6DF5D67K87)"
+     1 valid identities found
+=== nb provisioning profiles ===
+       0

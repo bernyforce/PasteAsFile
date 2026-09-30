@@ -1,0 +1,8 @@
+appex       : /Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex
+identifiant : org.pasteasfile.PasteAsFileFinder
+remove: no plugin at /Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex
+ACTIVÉ :
++    org.pasteasfile.PasteAsFileFinder(1.0)	424F5F4F-57FE-437F-BE4F-E3E97BC3236A	2026-09-30 10:55:10 +0000	/Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex
++    org.pasteasfile.PasteAsFileFinder(1.0)	0CFBF14E-0425-4C7E-A43D-599E567CD89D	2026-09-30 10:55:07 +0000	/private/tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex
+ (2 plug-ins)
+Finder relancé. Test : clic droit dans une fenêtre du dossier personnel > « Coller à partir du presse-papier ».

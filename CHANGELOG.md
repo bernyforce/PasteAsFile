@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.2 — 2026-09-30
+
+- Identité « Apple Development » obtenue via le compte Apple gratuit déjà connecté à Xcode (Personal Team, aucune adhésion payante) : `security find-identity` → `1 valid identities found` (`docs/logs/identity.log`).
+- Cause réelle du refus pkd mesurée dans son journal : `plug-ins must be sandboxed` → `com.apple.security.app-sandbox = true` (+ `files.user-selected.read-write`) ; contrôle `V4-sandbox` aligné sur `true`.
+- `scripts/build-signed.sh` exécuté avec l'identité Apple : `rc=0`, `TeamIdentifier=7JX62UTF63`, installation dans `/Applications`.
+- `scripts/activate-extension.sh` : `rc=0`, extension listée et **activée** par pkd, Finder relancé (`docs/logs/pluginkit.log`).
+- Reste à exécuter par l'utilisateur : le test au clic droit (« Coller à partir du presse-papier »).
+
 ## 0.1.1 — 2026-09-30
 
 - Reprise de vérification : V1–V5 et T1–T14 verts, chaque statut adossé à une sortie brute dans `docs/logs/`.

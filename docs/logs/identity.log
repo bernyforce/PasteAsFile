@@ -1,0 +1,32 @@
+### 2026-09-30 06:53:19 PHASE 2 controle deterministe
+--- security find-identity -v -p codesigning ---
+  1) 3ED1F3250F80E833F8B41E7E0F8980533CC0B5E1 "Apple Development: <AppleID-masque> (6DF5D67K87)"
+     1 valid identities found
+--- codesign app ---
+Identifier=org.pasteasfile.PasteAsFile
+CodeDirectory v=20400 size=479 flags=0x0(none) hashes=4+7 location=embedded
+Executable Segment flags=0x1
+Signature size=4782
+Authority=Apple Development: <AppleID-masque> (6DF5D67K87)
+Authority=Apple Worldwide Developer Relations Certification Authority
+Authority=Apple Root CA
+TeamIdentifier=7JX62UTF63
+--- codesign appex ---
+Identifier=org.pasteasfile.PasteAsFileFinder
+CodeDirectory v=20400 size=581 flags=0x0(none) hashes=7+7 location=embedded
+Executable Segment flags=0x1
+Signature size=4782
+Authority=Apple Development: <AppleID-masque> (6DF5D67K87)
+Authority=Apple Worldwide Developer Relations Certification Authority
+Authority=Apple Root CA
+TeamIdentifier=7JX62UTF63
+--- profil embarque ---
+ls: /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app/Contents/embedded.provisionprofile: No such file or directory
+ls: /tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex/Contents/embedded.provisionprofile: No such file or directory
+--- verify strict ---
+--validated:/private/tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex
+/tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app: valid on disk
+/tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app: satisfies its Designated Requirement
+--- spctl (info) ---
+/tmp/pasteasfile-build/xcode-signed/Build/Products/Release/PasteAsFile.app: rejected
+origin=Apple Development: <AppleID-masque> (6DF5D67K87)

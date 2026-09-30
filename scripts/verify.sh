@@ -29,7 +29,7 @@ run V3-app env DEVELOPER_DIR="$DEV" xcodebuild -project PasteAsFile.xcodeproj -s
 run V3-finder env DEVELOPER_DIR="$DEV" xcodebuild -project PasteAsFile.xcodeproj -scheme PasteAsFileFinder -configuration Release -derivedDataPath "$SCRATCH/xcode" build
 run V4-plist plutil -lint PasteAsFile/Info.plist PasteAsFileFinder/Info.plist PasteAsFileFinder/PasteAsFileFinder.entitlements PasteAsFile.xcodeproj/project.pbxproj
 run V4-point /bin/bash -c "test \"\$(/usr/libexec/PlistBuddy -c 'Print NSExtension:NSExtensionPointIdentifier' PasteAsFileFinder/Info.plist)\" = com.apple.FinderSync"
-run V4-sandbox /bin/bash -c "test \"\$(/usr/libexec/PlistBuddy -c 'Print com.apple.security.app-sandbox' PasteAsFileFinder/PasteAsFileFinder.entitlements)\" = false"
+run V4-sandbox /bin/bash -c "test \"\$(/usr/libexec/PlistBuddy -c 'Print com.apple.security.app-sandbox' PasteAsFileFinder/PasteAsFileFinder.entitlements)\" = true"
 APP="$SCRATCH/xcode/Build/Products/Release/PasteAsFile.app"
 if [ -d "$APP" ]; then
     run V5 codesign --verify --deep --strict --verbose=2 "$APP"

@@ -1,0 +1,61 @@
+### PHASE 1 2026-09-30T10:37:41Z
+$ xcodebuild -help | grep -iE 'cert|account|team|authenticat'
+       xcodebuild -create-xcframework [-help] [-framework <path>] [-library <path> [-headers <path>]] -output <path>
+    -archivePath PATH                                        specifies the directory where any created archives will be placed, or the archive that should be exported
+    -importLocalizations                                     imports localizations for a project, assuming any necessary localized resources have been created in Xcode
+    -allowProvisioningUpdates                                Allow xcodebuild to communicate with the Apple Developer website. For automatically signed targets, xcodebuild will create and update profiles, app IDs, and certificates. For manually signed targets, xcodebuild will download missing or updated provisioning profiles. Requires a developer account to have been added in Xcode's Accounts settings or an App Store Connect authentication key to be specified via the -authenticationKeyPath, -authenticationKeyID, and -authenticationKeyIssuerID parameters.
+    -authenticationKeyPath                                   specifies the path to an authentication key issued by App Store Connect. If specified, xcodebuild will authenticate with the Apple Developer website using this credential. The -authenticationKeyID and -authenticationKeyIssuerID parameters are required.
+    -authenticationKeyID                                     specifies the key identifier associated with the App Store Conect authentication key at -authenticationKeyPath. This string can be located in the users and access details for your provider at "https://appstoreconnect.apple.com".
+    -authenticationKeyIssuerID                               specifies the App Store Connect issuer identifier associated with the authentication key at -authenticationKeyPath. This string can be located in the users and access details for your provider at "https://appstoreconnect.apple.com".
+    -create-xcframework                                      create an xcframework from prebuilt libraries; -help for more information.
+	installerSigningCertificate : String
+		For manual signing only. Provide a certificate name, SHA-1 hash, or automatic selector to use for signing. Automatic selectors allow Xcode to pick the newest installed certificate of a particular type. The available automatic selectors are "Developer ID Installer" and "Mac Installer Distribution". Defaults to an automatic certificate selector matching the current distribution method.
+	signingCertificate : String
+		For manual signing only. Provide a certificate name, SHA-1 hash, or automatic selector to use for signing. Automatic selectors allow Xcode to pick the newest installed certificate of a particular type. The available automatic selectors are "Apple Development", "Apple Distribution", "Developer ID Application", "iOS Developer", "iOS Distribution", "Mac App Distribution", and "Mac Developer". Defaults to an automatic certificate selector matching the current distribution method.
+		The signing style to use when re-signing the app for distribution. Options are manual or automatic. Apps that were automatically signed when archived default to automatic. Apps that were manually signed when archived default to manual. If your archive is manually signed and you choose to automatically sign when distributing, then Xcode will create provisioning profiles and managed cloud signing certificates as necessary, but will not register devices, register app IDs, or modify app ID settings.
+	teamID : String
+		The Developer team to use for this export. Defaults to the team used to build the archive.
+
+$ ls -la docs/logs/
+total 2224
+drwxr-xr-x@ 43 bf  staff    1376 sept. 30 06:37 .
+drwxr-xr-x@  7 bf  staff     224 sept. 30 06:28 ..
+-rw-r--r--@  1 bf  staff     603 sept. 30 06:21 6a_probe_appex_adhoc.txt
+-rw-r--r--@  1 bf  staff     209 sept. 30 06:21 6b_probe_identite_locale.txt
+-rw-r--r--@  1 bf  staff     724 sept. 30 06:21 6c_probe_runtime.txt
+-rw-r--r--@  1 bf  staff    2139 sept. 30 06:21 6d_pkd_journal.txt
+-rw-r--r--@  1 bf  staff     335 sept. 30 06:21 6e_probe_final.txt
+-rw-r--r--@  1 bf  staff    4282 sept. 30 06:27 commands.log
+drwxr-xr-x@  6 bf  staff     192 sept. 30 06:28 passe
+-rw-r--r--@  1 bf  staff    1286 sept. 30 06:37 phase0_detection.log
+-rw-r--r--@  1 bf  staff    3715 sept. 30 06:37 phase1_xcode.log
+-rw-r--r--@  1 bf  staff     349 sept. 30 06:13 v1_swift_build.log
+-rw-r--r--@  1 bf  staff      65 sept. 30 06:27 V1.log
+-rw-r--r--@  1 bf  staff    3982 sept. 30 06:13 v2_swift_test.log
+-rw-r--r--@  1 bf  staff    3659 sept. 30 06:27 V2.log
+-rw-r--r--@  1 bf  staff  270072 sept. 30 06:21 v3_build_app_inline.log
+-rw-r--r--@  1 bf  staff  229295 sept. 30 06:13 v3_build_app.log
+-rw-r--r--@  1 bf  staff    4100 sept. 30 06:21 v3_build_finder_inline.log
+-rw-r--r--@  1 bf  staff    3805 sept. 30 06:13 v3_build_finder.log
+-rw-r--r--@  1 bf  staff   10180 sept. 30 06:27 V3-app.log
+-rw-r--r--@  1 bf  staff    3805 sept. 30 06:27 V3-finder.log
+-rw-r--r--@  1 bf  staff     155 sept. 30 06:13 v4_plist.log
+-rw-r--r--@  1 bf  staff      21 sept. 30 06:13 v4_point.log
+-rw-r--r--@  1 bf  staff       6 sept. 30 06:13 v4_sandbox.log
+-rw-r--r--@  1 bf  staff    1056 sept. 30 06:13 v4_xattr.log
+-rw-r--r--@  1 bf  staff     155 sept. 30 06:27 V4-plist.log
+-rw-r--r--@  1 bf  staff       0 sept. 30 06:27 V4-point.log
+-rw-r--r--@  1 bf  staff       0 sept. 30 06:27 V4-sandbox.log
+-rw-r--r--@  1 bf  staff     321 sept. 30 06:22 v5_codesign_deriveddata_appex.log
+
+$ ls ~/Library/Developer/Xcode/UserData/ ; xcodebuild -showBuildSettings team (n/a)
+total 32
+drwxr-xr-x  6 bf  staff    192 sept. 11 03:01 .
+drwxr-xr-x  6 bf  staff    192 août  26 06:41 ..
+drwxr-xr-x  8 bf  staff    256 sept. 30 06:21 DerivedData
+-rw-r--r--  1 bf  staff  12178 sept. 10 13:34 SDKToSimulatorIndexMapping.plist
+drwxr-xr-x  5 bf  staff    160 sept. 10 21:24 UserData
+-rw-r--r--  1 bf  staff   1143 sept. 11 03:01 XcodeToMetalToolchainIndexMapping.plist
+
+$ open -a Xcode
+rc=0
