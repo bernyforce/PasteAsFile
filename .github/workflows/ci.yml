@@ -1,0 +1,11 @@
+name: macOS
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Swift package and macOS app
+        run: ./scripts/verify.sh
