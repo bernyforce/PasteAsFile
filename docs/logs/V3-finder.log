@@ -34,9 +34,9 @@ ProcessInfoPlistFile /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAs
 
 PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/ExplicitPrecompiledModules
 
-PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/SDKExplicitPrecompiledModules
-
 PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/SDKExplicitPrecompiledModules
 
 ** BUILD SUCCEEDED **
 

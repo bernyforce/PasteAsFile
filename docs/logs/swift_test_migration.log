@@ -1,150 +1,28 @@
 Building for debugging...
 [Planning deferred tasks]
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-product-p.build/Objects-normal/arm64/PasteAsFileCore.LinkFileList' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-product-p.build/Objects-normal/arm64/PasteAsFileCore_libtool_dependency_info.dat' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/libPasteAsFileCore.a' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/DerivedSources/Entitlements.plist' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/DerivedSources/test_entry_point.swift' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests Swift Compilation Finished' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/GeneratedModuleMaps/PasteAsFileCore-Swift.h' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests Swift Compilation Requirements Finished' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/GeneratedModuleMaps/PasteAsFileCore.modulemap' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests-OutputFileMap.json' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests-dependency-scan.dia' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore Swift Compilation Finished' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests.LinkFileList' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore Swift Compilation Requirements Finished' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests.SwiftFileList' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore-OutputFileMap.json' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests.abi.json' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore-Swift.h' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests.swiftdoc' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore-dependency-scan.dia' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests.swiftmodule' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore.LinkFileList' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests.swiftsourceinfo' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore.SwiftFileList' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests_const_extract_protocols.json' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore.abi.json' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests_dependency_info.dat' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore.swiftdoc' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteAsFileCoreTests_lto.o' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore.swiftmodule' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteLogicTests.o' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/PasteLogicTests.swiftconstvalues' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore.swiftsourceinfo' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/test_entry_point.o' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore_const_extract_protocols.json' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/Objects-normal/arm64/test_entry_point.swiftconstvalues' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore_dependency_info.dat' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/PasteAsFileCoreTests.xctest.xcent' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteAsFileCore_lto.o' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/PasteAsFileCoreTests.xctest.xcent.der' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteLogic.o' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/Objects-normal/arm64/PasteLogic.swiftconstvalues' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCoreTests-p.build/empty-PasteAsFileCoreTests.plist' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Intermediates.noindex/PasteAsFileCore.build/Debug/PasteAsFileCore-t.build/PasteAsFileCore.modulemap' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCoreTests.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCore.o' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCoreTests.swiftmodule/arm64-apple-macos.abi.json' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCore.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCoreTests.swiftmodule/arm64-apple-macos.swiftdoc' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCore.swiftmodule/arm64-apple-macos.abi.json' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCoreTests.swiftmodule/arm64-apple-macos.swiftmodule' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCore.swiftmodule/arm64-apple-macos.swiftdoc' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCoreTests.xctest' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCore.swiftmodule/arm64-apple-macos.swiftmodule' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCoreTests.xctest/Contents' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCoreTests.xctest/Contents/Info.plist' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCoreTests.xctest/Contents/MacOS' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCoreTests.xctest/Contents/MacOS/PasteAsFileCoreTests' is located outside of the allowed root paths.
-
-warning: Stale file '/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile/.build/out/Products/Debug/PasteAsFileCoreTests.xctest/_CodeSignature' is located outside of the allowed root paths.
-
 [28 / 52]
 [29 / 53] PasteAsFileCore
-[39 / 89]
-[44 / 89]
+[41 / 89]
 [47 / 89]
 [48 / 89]
-[52 / 89]
-[55 / 89]
+[53 / 89]
+[57 / 89]
 [60 / 89]
 [62 / 89]
 [63 / 89]
 [73 / 89] PasteAsFileCore
 [79 / 90] PasteAsFileCoreTests-product
-[98 / 127]
-[104 / 127]
-[108 / 127]
+[101 / 127]
+[106 / 127]
 [109 / 127]
 [112 / 127]
 [113 / 127]
-[116 / 127] PasteAsFileCoreTests-product
 [121 / 127] PasteAsFileCoreTests-product
 [123 / 127] PasteAsFileCoreTests-product
-[126 / 127] PasteAsFileCoreTests-product
-Build complete! (5,25 s)
-Test Suite 'All tests' started at 2026-09-30 07:16:27.156.
-Test Suite 'PasteAsFileCoreTests.xctest' started at 2026-09-30 07:16:27.165.
-Test Suite 'PasteAsFileCoreTests' started at 2026-09-30 07:16:27.165.
+Build complete! (6,08 s)
+Test Suite 'All tests' started at 2026-09-30 07:24:29.536.
+Test Suite 'PasteAsFileCoreTests.xctest' started at 2026-09-30 07:24:29.546.
+Test Suite 'PasteAsFileCoreTests' started at 2026-09-30 07:24:29.546.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testPasteboardPNGAndTIFFRaw]' started.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testPasteboardPNGAndTIFFRaw]' passed (0.007 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT10ExactName]' started.
@@ -156,7 +34,7 @@ Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT12RawBytesSHA256]' p
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT13FilesOverrideRawAndUniqued]' started.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT13FilesOverrideRawAndUniqued]' passed (0.001 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT14RichTextPasteboardIntegration]' started.
-Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT14RichTextPasteboardIntegration]' passed (0.001 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT14RichTextPasteboardIntegration]' passed (0.002 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT1Tiff]' started.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT1Tiff]' passed (0.000 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT2Png]' started.
@@ -175,12 +53,12 @@ Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT8Txt]' started.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT8Txt]' passed (0.000 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT9UnknownProducesNothing]' started.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT9UnknownProducesNothing]' passed (0.000 seconds).
-Test Suite 'PasteAsFileCoreTests' passed at 2026-09-30 07:16:27.180.
+Test Suite 'PasteAsFileCoreTests' passed at 2026-09-30 07:24:29.562.
 	 Executed 15 tests, with 0 failures (0 unexpected) in 0.014 (0.015) seconds
-Test Suite 'PasteAsFileCoreTests.xctest' passed at 2026-09-30 07:16:27.180.
-	 Executed 15 tests, with 0 failures (0 unexpected) in 0.014 (0.015) seconds
-Test Suite 'All tests' passed at 2026-09-30 07:16:27.180.
-	 Executed 15 tests, with 0 failures (0 unexpected) in 0.014 (0.025) seconds
+Test Suite 'PasteAsFileCoreTests.xctest' passed at 2026-09-30 07:24:29.562.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.014 (0.016) seconds
+Test Suite 'All tests' passed at 2026-09-30 07:24:29.562.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.014 (0.026) seconds
 ◇ Test run started.
 ↳ Testing Library Version: 2084
 ↳ Target Platform: arm64e-apple-macos14.0

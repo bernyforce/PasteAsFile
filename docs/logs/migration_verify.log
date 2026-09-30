@@ -1,30 +1,28 @@
 
 === V1 ===
 Building for debugging...
-[Using on-disk description]
-Build complete! (0,58 s)
+[1 / 6]
+Build complete! (0,32 s)
 V1 exit=0
 
 === V2 ===
 Building for debugging...
-[Computing dependencies]
-[1 / 10]
-Build complete! (0,70 s)
-Test Suite 'All tests' started at 2026-09-30 07:22:03.839.
-Test Suite 'PasteAsFileCoreTests.xctest' started at 2026-09-30 07:22:03.857.
-Test Suite 'PasteAsFileCoreTests' started at 2026-09-30 07:22:03.857.
+Build complete! (0,19 s)
+Test Suite 'All tests' started at 2026-09-30 07:24:31.258.
+Test Suite 'PasteAsFileCoreTests.xctest' started at 2026-09-30 07:24:31.264.
+Test Suite 'PasteAsFileCoreTests' started at 2026-09-30 07:24:31.264.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testPasteboardPNGAndTIFFRaw]' started.
-Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testPasteboardPNGAndTIFFRaw]' passed (0.021 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testPasteboardPNGAndTIFFRaw]' passed (0.005 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT10ExactName]' started.
-Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT10ExactName]' passed (0.001 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT10ExactName]' passed (0.000 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT11Collisions]' started.
-Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT11Collisions]' passed (0.004 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT11Collisions]' passed (0.001 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT12RawBytesSHA256]' started.
-Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT12RawBytesSHA256]' passed (0.004 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT12RawBytesSHA256]' passed (0.001 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT13FilesOverrideRawAndUniqued]' started.
-Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT13FilesOverrideRawAndUniqued]' passed (0.003 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT13FilesOverrideRawAndUniqued]' passed (0.001 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT14RichTextPasteboardIntegration]' started.
-Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT14RichTextPasteboardIntegration]' passed (0.004 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT14RichTextPasteboardIntegration]' passed (0.001 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT1Tiff]' started.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT1Tiff]' passed (0.000 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT2Png]' started.
@@ -32,23 +30,23 @@ Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT2Png]' passed (0.000
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT3Jpeg]' started.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT3Jpeg]' passed (0.000 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT4Icns]' started.
-Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT4Icns]' passed (0.001 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT4Icns]' passed (0.000 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT5Pdf]' started.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT5Pdf]' passed (0.000 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT6RtfPriority]' started.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT6RtfPriority]' passed (0.000 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT7Html]' started.
-Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT7Html]' passed (0.001 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT7Html]' passed (0.000 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT8Txt]' started.
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT8Txt]' passed (0.000 seconds).
 Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT9UnknownProducesNothing]' started.
-Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT9UnknownProducesNothing]' passed (0.003 seconds).
-Test Suite 'PasteAsFileCoreTests' passed at 2026-09-30 07:22:03.905.
-	 Executed 15 tests, with 0 failures (0 unexpected) in 0.044 (0.048) seconds
-Test Suite 'PasteAsFileCoreTests.xctest' passed at 2026-09-30 07:22:03.905.
-	 Executed 15 tests, with 0 failures (0 unexpected) in 0.044 (0.048) seconds
-Test Suite 'All tests' passed at 2026-09-30 07:22:03.905.
-	 Executed 15 tests, with 0 failures (0 unexpected) in 0.044 (0.067) seconds
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT9UnknownProducesNothing]' passed (0.000 seconds).
+Test Suite 'PasteAsFileCoreTests' passed at 2026-09-30 07:24:31.276.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.010 (0.011) seconds
+Test Suite 'PasteAsFileCoreTests.xctest' passed at 2026-09-30 07:24:31.276.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.010 (0.012) seconds
+Test Suite 'All tests' passed at 2026-09-30 07:24:31.276.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.010 (0.018) seconds
 ◇ Test run started.
 ↳ Testing Library Version: 2084
 ↳ Target Platform: arm64e-apple-macos14.0
@@ -92,13 +90,13 @@ ProcessInfoPlistFile /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAs
     cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
     builtin-infoPlistUtility /Users/bf/knowledge-share/projets-dev/PasteAsFile/PasteAsFileFinder/Info.plist -producttype com.apple.product-type.app-extension -expandbuildsettings -platform macosx -o /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFileFinder.appex/Contents/Info.plist
 
-MkDir /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents (in target 'PasteAsFile' from project 'PasteAsFile')
-    cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
-    /bin/mkdir -p /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents
-
 MkDir /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app (in target 'PasteAsFile' from project 'PasteAsFile')
     cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
     /bin/mkdir -p /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app
+
+MkDir /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents (in target 'PasteAsFile' from project 'PasteAsFile')
+    cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
+    /bin/mkdir -p /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents
 
 MkDir /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/PlugIns (in target 'PasteAsFile' from project 'PasteAsFile')
     cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
@@ -116,19 +114,19 @@ Copy /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Content
     cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
     builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -remove-static-executable /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFileFinder.appex /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/PlugIns
 
-ProcessInfoPlistFile /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/Info.plist /Users/bf/knowledge-share/projets-dev/PasteAsFile/PasteAsFile/Info.plist (in target 'PasteAsFile' from project 'PasteAsFile')
-    cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
-    builtin-infoPlistUtility /Users/bf/knowledge-share/projets-dev/PasteAsFile/PasteAsFile/Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/PkgInfo -expandbuildsettings -platform macosx -scanforprivacyfile /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex -o /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/Info.plist
-
 CopySwiftLibs /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app (in target 'PasteAsFile' from project 'PasteAsFile')
     cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
     builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/MacOS/PasteAsFile --scan-folder /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/Frameworks --scan-folder /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/PlugIns --scan-folder /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/Library/SystemExtensions --scan-folder /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/Extensions --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/Cocoa.framework --platform macosx --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
 
+ProcessInfoPlistFile /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/Info.plist /Users/bf/knowledge-share/projets-dev/PasteAsFile/PasteAsFile/Info.plist (in target 'PasteAsFile' from project 'PasteAsFile')
+    cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
+    builtin-infoPlistUtility /Users/bf/knowledge-share/projets-dev/PasteAsFile/PasteAsFile/Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/PkgInfo -expandbuildsettings -platform macosx -scanforprivacyfile /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex -o /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/Info.plist
+
 ExtractAppIntentsMetadata (in target 'PasteAsFile' from project 'PasteAsFile')
     cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
     /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name PasteAsFile --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk --xcode-version 27A266a --platform-family macOS --deployment-target 13.0 --bundle-identifier org.pasteasfile.PasteAsFile --output /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/Resources --target-triple arm64-apple-macos13.0 --target-triple x86_64-apple-macos13.0 --binary-file /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/MacOS/PasteAsFile --dependency-file /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/Objects-normal/arm64/PasteAsFile_dependency_info.dat --dependency-file /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/Objects-normal/x86_64/PasteAsFile_dependency_info.dat --stringsdata-file /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --stringsdata-file /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/Objects-normal/x86_64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/Objects-normal/arm64/PasteAsFile.SwiftFileList --source-file-list /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/Objects-normal/x86_64/PasteAsFile.SwiftFileList --metadata-file-list /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/PasteAsFile.DependencyMetadataFileList --static-metadata-file-list /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/PasteAsFile.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/Objects-normal/arm64/PasteAsFile.SwiftConstValuesFileList --swift-const-vals-list /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/Objects-normal/x86_64/PasteAsFile.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
-2026-09-30 07:22:07.462 appintentsmetadataprocessor[30307:9504244] Starting appintentsmetadataprocessor export
-2026-09-30 07:22:07.468 appintentsmetadataprocessor[30307:9504244] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+2026-09-30 07:24:32.203 appintentsmetadataprocessor[33225:9514592] Starting appintentsmetadataprocessor export
+2026-09-30 07:24:32.204 appintentsmetadataprocessor[33225:9514592] warning: Metadata extraction skipped, no AppIntents.framework dependency found
 
 GenerateDSYMFile /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app.dSYM /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/MacOS/PasteAsFile (in target 'PasteAsFile' from project 'PasteAsFile')
     cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
@@ -142,13 +140,13 @@ CodeSign /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app (in
     
     /usr/bin/codesign --force --sign - --entitlements /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/PasteAsFile.build/Release/PasteAsFile.build/PasteAsFile.app.xcent --timestamp\=none --generate-entitlement-der /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app
 
-ValidateEmbeddedBinary /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex (in target 'PasteAsFile' from project 'PasteAsFile')
-    cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
-    /Applications/Xcode.app/Contents/Developer/usr/bin/embeddedBinaryValidationUtility /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex -signing-cert - -info-plist-path /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/Info.plist
-
 RegisterExecutionPolicyException /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app (in target 'PasteAsFile' from project 'PasteAsFile')
     cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
     builtin-RegisterExecutionPolicyException /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app
+
+ValidateEmbeddedBinary /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex (in target 'PasteAsFile' from project 'PasteAsFile')
+    cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
+    /Applications/Xcode.app/Contents/Developer/usr/bin/embeddedBinaryValidationUtility /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex -signing-cert - -info-plist-path /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app/Contents/Info.plist
 
 Validate /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app (in target 'PasteAsFile' from project 'PasteAsFile')
     cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
@@ -209,9 +207,9 @@ ProcessInfoPlistFile /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAs
 
 PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/ExplicitPrecompiledModules
 
-PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/SDKExplicitPrecompiledModules
-
 PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/SDKExplicitPrecompiledModules
 
 ** BUILD SUCCEEDED **
 
