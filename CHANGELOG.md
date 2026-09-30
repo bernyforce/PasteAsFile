@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.3 — 2026-09-30
+
+- Migration définitive hors Google Drive : emplacement `/Users/bf/knowledge-share/projets-dev/PasteAsFile` (copie vérifiée HEAD/arbre identiques, ancien chemin mis à la Corbeille).
+- Socle rejoué depuis la nouvelle position : `scripts/verify.sh` rc=0 (8/8), `swift test` 15/15.
+- Une seule copie enregistrée par pkd : les scripts suppriment leur produit de scratch après installation.
+- Publication : dépôt GitHub privé https://github.com/bernyforce/PasteAsFile (passage public possible via `gh repo edit --visibility public`).
+- `com.apple.provenance` documenté comme attribut système inerte (non bloquant pour la signature).
+
 ## 0.1.2 — 2026-09-30
 
 - Identité « Apple Development » obtenue via le compte Apple gratuit déjà connecté à Xcode (Personal Team, aucune adhésion payante) : `security find-identity` → `1 valid identities found` (`docs/logs/identity.log`).

@@ -55,3 +55,40 @@
 2026-09-30 10:52 xcodebuild -allowProvisioningUpdates -> BUILD SUCCEEDED, identite Apple Development creee
 2026-09-30 10:55 Phase 2 build-signed.sh + activate-extension.sh -> ACTIVÉ
 2026-09-30 10:58 pkd : cause = plug-ins must be sandboxed -> app-sandbox=true ; verify.sh rc=0
+[2026-09-30T07:15:59-04:00] $ env DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build -Xswiftc -warnings-as-errors --scratch-path /tmp/pasteasfile-build/spm
+[2026-09-30T07:16:01-04:00] rc=0 log=docs/logs/V1.log
+[2026-09-30T07:16:01-04:00] $ env DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test -Xswiftc -warnings-as-errors --scratch-path /tmp/pasteasfile-build/spm
+[2026-09-30T07:16:04-04:00] rc=0 log=docs/logs/V2.log
+[2026-09-30T07:16:04-04:00] $ env DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild -project PasteAsFile.xcodeproj -scheme PasteAsFile -configuration Release -derivedDataPath /tmp/pasteasfile-build/xcode build
+[2026-09-30T07:16:09-04:00] rc=0 log=docs/logs/V3-app.log
+[2026-09-30T07:16:09-04:00] $ env DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild -project PasteAsFile.xcodeproj -scheme PasteAsFileFinder -configuration Release -derivedDataPath /tmp/pasteasfile-build/xcode build
+[2026-09-30T07:16:10-04:00] rc=0 log=docs/logs/V3-finder.log
+[2026-09-30T07:16:10-04:00] $ plutil -lint PasteAsFile/Info.plist PasteAsFileFinder/Info.plist PasteAsFileFinder/PasteAsFileFinder.entitlements PasteAsFile.xcodeproj/project.pbxproj
+[2026-09-30T07:16:10-04:00] rc=0 log=docs/logs/V4-plist.log
+[2026-09-30T07:16:10-04:00] $ /bin/bash -c test "$(/usr/libexec/PlistBuddy -c 'Print NSExtension:NSExtensionPointIdentifier' PasteAsFileFinder/Info.plist)" = com.apple.FinderSync
+[2026-09-30T07:16:10-04:00] rc=0 log=docs/logs/V4-point.log
+[2026-09-30T07:16:10-04:00] $ /bin/bash -c test "$(/usr/libexec/PlistBuddy -c 'Print com.apple.security.app-sandbox' PasteAsFileFinder/PasteAsFileFinder.entitlements)" = true
+[2026-09-30T07:16:10-04:00] rc=0 log=docs/logs/V4-sandbox.log
+[2026-09-30T07:16:10-04:00] $ codesign --verify --deep --strict --verbose=2 /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app
+[2026-09-30T07:16:10-04:00] rc=0 log=docs/logs/V5.log
+[2026-09-30T07:21:58-04:00] $ env DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build -Xswiftc -warnings-as-errors --scratch-path /tmp/pasteasfile-build/spm
+[2026-09-30T07:22:00-04:00] rc=0 log=docs/logs/V1.log
+[2026-09-30T07:22:00-04:00] $ env DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test -Xswiftc -warnings-as-errors --scratch-path /tmp/pasteasfile-build/spm
+[2026-09-30T07:22:04-04:00] rc=0 log=docs/logs/V2.log
+[2026-09-30T07:22:04-04:00] $ env DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild -project PasteAsFile.xcodeproj -scheme PasteAsFile -configuration Release -derivedDataPath /tmp/pasteasfile-build/xcode build
+[2026-09-30T07:22:09-04:00] rc=0 log=docs/logs/V3-app.log
+[2026-09-30T07:22:09-04:00] $ env DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild -project PasteAsFile.xcodeproj -scheme PasteAsFileFinder -configuration Release -derivedDataPath /tmp/pasteasfile-build/xcode build
+[2026-09-30T07:22:13-04:00] rc=0 log=docs/logs/V3-finder.log
+[2026-09-30T07:22:13-04:00] $ plutil -lint PasteAsFile/Info.plist PasteAsFileFinder/Info.plist PasteAsFileFinder/PasteAsFileFinder.entitlements PasteAsFile.xcodeproj/project.pbxproj
+[2026-09-30T07:22:13-04:00] rc=0 log=docs/logs/V4-plist.log
+[2026-09-30T07:22:13-04:00] $ /bin/bash -c test "$(/usr/libexec/PlistBuddy -c 'Print NSExtension:NSExtensionPointIdentifier' PasteAsFileFinder/Info.plist)" = com.apple.FinderSync
+[2026-09-30T07:22:13-04:00] rc=0 log=docs/logs/V4-point.log
+[2026-09-30T07:22:13-04:00] $ /bin/bash -c test "$(/usr/libexec/PlistBuddy -c 'Print com.apple.security.app-sandbox' PasteAsFileFinder/PasteAsFileFinder.entitlements)" = true
+[2026-09-30T07:22:13-04:00] rc=0 log=docs/logs/V4-sandbox.log
+[2026-09-30T07:22:13-04:00] $ codesign --verify --deep --strict --verbose=2 /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFile.app
+[2026-09-30T07:22:13-04:00] rc=0 log=docs/logs/V5.log
+2026-09-30 Phase 1 : mv hors Google Drive refuse (FileProvider), cp -R rc=0, HEAD 98e876e et arbre 036b24b identiques
+2026-09-30 Phase 1 : verify.sh rc=0 (8/8) et swift test 15/15 depuis la nouvelle position
+2026-09-30 Phase 1 : 4 copies pkd desenregistrees, build signe TeamIdentifier=7JX62UTF63, 1 entree active
+2026-09-30 Phase 1.6 : ancien chemin Google Drive supprime via le Finder (Corbeille)
+2026-09-30 Phase 2 : gh deja connecte (bernyforce), repo prive cree https://github.com/bernyforce/PasteAsFile, push main

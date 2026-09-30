@@ -37,4 +37,6 @@ else
     printf 'V5 NOT RUN: application absente (%s)\n' "$APP" | tee docs/logs/V5.log
     failed=1
 fi
+# Évite qu'une 2e copie de l'appex soit enregistrée par pkd après un run de vérification
+rm -rf "$APP"
 exit "$failed"

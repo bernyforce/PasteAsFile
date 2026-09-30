@@ -3,6 +3,12 @@
 Extension Finder Sync (macOS 13+) ajoutant l'entrée « Coller à partir du presse-papier » au menu
 contextuel du Finder, plus l'application hôte qui l'héberge.
 
+## Dépôt et emplacement (unique)
+
+- Emplacement canonique : `/Users/bf/knowledge-share/projets-dev/PasteAsFile`
+- Dépôt GitHub privé : https://github.com/bernyforce/PasteAsFile (`gh repo create PasteAsFile --private --source . --push`)
+- Le dépôt a quitté Google Drive le 2026-09-30 : c'est ce qui supprime définitivement les conflits d'attributs `com.apple.FinderInfo` avec la signature.
+
 ## Comportement
 
 - Presse-papier contenant des fichiers → ils sont copiés dans le dossier visé, sans écrasement
@@ -25,10 +31,10 @@ swift test  -Xswiftc -warnings-as-errors --scratch-path /tmp/pasteasfile-build/s
 scripts/verify.sh                                                                   # V1–V5, journalisé
 ```
 
-Ne construisez pas dans le dossier Google Drive : les attributs `com.apple.FinderInfo` déposés par
-Google Drive font échouer la signature (`resource fork, Finder information, or similar detritus
-not allowed`). Les scripts écrivent donc les artefacts sur un volume local. Détails et preuves
-brutes : `docs/VERDICT.md`.
+Le dépôt n'est plus dans Google Drive (voir « Dépôt et emplacement ») : les attributs `com.apple.FinderInfo`
+déposés par Google Drive faisaient échouer la signature (`resource fork, Finder information, or similar
+detritus not allowed`). Les scripts écrivent les artefacts dans `/tmp/pasteasfile-build` puis installent
+l'unique exemplaire retenu dans `/Applications`. Détails et preuves brutes : `docs/VERDICT.md`.
 
 ## Activation
 

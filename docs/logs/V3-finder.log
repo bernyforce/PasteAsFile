@@ -24,27 +24,19 @@ GatherProvisioningInputs
 
 CreateBuildDescription
 
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
-
-Build description signature: 4b914ca67cf233d2281aaf1a93a35f91
-Build description path: /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/XCBuildData/4b914ca67cf233d2281aaf1a93a35f91.xcbuilddata
 ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk /tmp/pasteasfile-build/xcode/SDKStatCaches.noindex/macosx27.0-26A425-7231f6df4def33e022ae2eb8f782df1a.sdkstatcache
-    cd /Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon\ Drive/Formation/Collège\ BDEB/ETE_2026/420-A60-BB\ ALGORITHMES\ D\'APPRENTISSAGE\ PROFOND/Examen\ Final/PasteAsFile/PasteAsFile.xcodeproj
+    cd /Users/bf/knowledge-share/projets-dev/PasteAsFile/PasteAsFile.xcodeproj
     /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -o /tmp/pasteasfile-build/xcode/SDKStatCaches.noindex/macosx27.0-26A425-7231f6df4def33e022ae2eb8f782df1a.sdkstatcache
 
-ProcessInfoPlistFile /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFileFinder.appex/Contents/Info.plist /Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon\ Drive/Formation/Collège\ BDEB/ETE_2026/420-A60-BB\ ALGORITHMES\ D\'APPRENTISSAGE\ PROFOND/Examen\ Final/PasteAsFile/PasteAsFileFinder/Info.plist (in target 'PasteAsFileFinder' from project 'PasteAsFile')
-    cd /Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon\ Drive/Formation/Collège\ BDEB/ETE_2026/420-A60-BB\ ALGORITHMES\ D\'APPRENTISSAGE\ PROFOND/Examen\ Final/PasteAsFile
-    builtin-infoPlistUtility /Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon\ Drive/Formation/Collège\ BDEB/ETE_2026/420-A60-BB\ ALGORITHMES\ D\'APPRENTISSAGE\ PROFOND/Examen\ Final/PasteAsFile/PasteAsFileFinder/Info.plist -producttype com.apple.product-type.app-extension -expandbuildsettings -platform macosx -o /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFileFinder.appex/Contents/Info.plist
+ProcessInfoPlistFile /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFileFinder.appex/Contents/Info.plist /Users/bf/knowledge-share/projets-dev/PasteAsFile/PasteAsFileFinder/Info.plist (in target 'PasteAsFileFinder' from project 'PasteAsFile')
+    cd /Users/bf/knowledge-share/projets-dev/PasteAsFile
+    builtin-infoPlistUtility /Users/bf/knowledge-share/projets-dev/PasteAsFile/PasteAsFileFinder/Info.plist -producttype com.apple.product-type.app-extension -expandbuildsettings -platform macosx -o /tmp/pasteasfile-build/xcode/Build/Products/Release/PasteAsFileFinder.appex/Contents/Info.plist
 
 PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/ExplicitPrecompiledModules
 
-PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
-
 PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/pasteasfile-build/xcode/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
 
 ** BUILD SUCCEEDED **
 

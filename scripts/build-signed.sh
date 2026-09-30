@@ -22,4 +22,7 @@ rm -rf /Applications/PasteAsFile.app
 /usr/bin/ditto "$APP" /Applications/PasteAsFile.app
 codesign -dv /Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex 2>&1 | grep -E "Authority|TeamIdentifier"
 echo "installé : /Applications/PasteAsFile.app"
+# Une seule copie enregistrée par pkd : le produit de scratch est retiré après installation
+rm -rf "$APP"
+echo "scratch retiré : $APP"
 echo "étape suivante : scripts/activate-extension.sh"

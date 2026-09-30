@@ -120,5 +120,29 @@ et le contrôle `V4-sandbox` de `scripts/verify.sh` attend désormais `true`.
 
 Verdict de cette passe : socle déterministe vert et extension **enregistrée + activée**, sans
 retouche manuelle des réglages ; il ne reste que le test au clic droit, qui produit l'artefact
-attendu et ne peut être déclenché que par l'utilisateur.
+attendu et ne peut être fait que par l'utilisateur.
+
+## Phase Migration (2026-09-30) — emplacement définitif `/Users/bf/knowledge-share/projets-dev/PasteAsFile`
+
+| Contrôle | Statut | Preuve brute |
+|---|---|---|
+| `mv` hors de Google Drive | REFUSÉ (FileProvider) | `mv: ... Operation timed out`, `mv_rc=1`, source intacte |
+| Copie de repli `cp -R` + intégrité | PASS | `cp_rc=0` ; HEAD `98e876e1e0189a60d97ecb3cde366c07e18472df` et arbre `036b24b809e669eabdd17c78076f78ce20ef7ae3` identiques à la source ; `git status --porcelain` vide ; `git fsck` muet ; `.git/config` présent |
+| Socle rejoué depuis la nouvelle position | PASS | `bash scripts/verify.sh` → `rc=0`, 8 × `exit=0`, 0 échec (`docs/logs/migration_verify.log`) ; `swift test` → `Executed 15 tests, with 0 failures` (`docs/logs/swift_test_migration.log`) |
+| Étiquettes (`xattr`) | PASS | bloquants (`quarantine`/`FinderInfo`/`fileprovider`/`ResourceFork`) = 0 ; attributs `com.google.drivefs.*` des objets git purgés par `git gc --prune=now` ; seul `com.apple.provenance` subsiste (attribut système, inerte) |
+| Build signé depuis la nouvelle source | PASS | `BUILD SUCCEEDED`, `TeamIdentifier=7JX62UTF63`, `satisfies its Designated Requirement`, `installé : /Applications/PasteAsFile.app` (`docs/logs/build-signed_migration.log`) |
+| Une seule copie enregistrée par pkd | PASS | `pluginkit -m -A -D \| grep -i pasteasfile` → 1 ligne activée (`+ org.pasteasfile.PasteAsFileFinder(1.0)`) ; 4 copies connues désenregistrées ; Finder relancé |
+| Ancien emplacement Google Drive | PASS | supprimé via le Finder (jamais `rm`) : `ls` → `No such file or directory` |
+
+## Phase GitHub (2026-09-30)
+
+| Contrôle | Statut | Preuve brute |
+|---|---|---|
+| Authentification `gh` | PASS (déjà en place) | `gh auth status` → `✓ Logged in to github.com account bernyforce (keyring)`, scope `repo` — aucun mot de passe ni code 2FA saisi |
+| Dépôt créé et poussé | PASS | `gh repo create PasteAsFile --private --source . --push` → `https://github.com/bernyforce/PasteAsFile`, `* [new branch] HEAD -> main` |
+| Vérification dépôt | PASS | `gh repo view --json url,visibility` → `{"url":"https://github.com/bernyforce/PasteAsFile","visibility":"PRIVATE"}` |
+| Référence distante | PASS | `git ls-remote origin` → `98e876e1e0189a60d97ecb3cde366c07e18472df refs/heads/main` |
+| Sécurité (aucune donnée d'identité) | PASS | recherche du motif de l'adresse Apple ID dans `git log -p --all` → `0` occurrence ; arbre de travail → `0` ; `docs/logs/identity_raw.log` ignoré (`.gitignore:8`) |
+
+Vu que le dépôt a été créé avant les modifications de cette passe, un second `git push` suit le commit final (Phase 3).
 
