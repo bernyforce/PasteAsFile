@@ -1,0 +1,12 @@
+resigne adhoc
+Signature=adhoc
+TeamIdentifier=not set
+add rc=0
+  (no matches)
+match rc=0
+--- recapitulatif ---
+     com.microsoft.OneDrive-mac.FinderSync(26.163.0823)	4F9C04EF-5303-44E0-8431-5DA926BBD555	2026-09-24 10:57:26 +0000	/Applications/OneDrive.app/Contents/PlugIns/FinderSync.appex
++    com.google.drivefs.finderhelper.findersync(131.0)	64C9395B-D806-41C5-AC29-A25225499C27	2026-09-29 18:07:06 +0000	/Applications/Google Drive.app/Contents/Applications/FinderHelper.app/Contents/PlugIns/FinderSyncExtension.appex
+ (2 plug-ins)
+
+__HERMES_CWD_6c553f54b366__/private/tmp__HERMES_CWD_6c553f54b366__

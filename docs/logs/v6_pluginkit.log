@@ -1,0 +1,30 @@
+### ÉTAPE 4 — enregistrement et activation (reprise, 2026-09-30T06:22:10-04:00)
+appex installé : /Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex
+
+=== $ /usr/bin/pluginkit -r /Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex
+rc=0
+
+=== $ /usr/bin/pluginkit -a /Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex
+rc=0
+identifiant = org.pasteasfile.PasteAsFileFinder
+
+=== $ /usr/bin/pluginkit -e use -i org.pasteasfile.PasteAsFileFinder
+rc=0
+
+=== $ pluginkit -m -A -D | grep -i pasteasfile
+rc=1  (rc=1 : aucune ligne retournee par pkd)
+
+=== $ pluginkit -m -A -D -i org.pasteasfile.PasteAsFileFinder
+
+=== $ /usr/bin/killall Finder
+rc=0
+
+=== pkd, cause du refus (extraits bruts, cf. 6a-6e) ===
+2026-09-30 06:17:39.868 Df pkd[80622:8bfc94] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 17
+2026-09-30 06:17:39.868 Df pkd[80622:8bfc95] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 25
+2026-09-30 06:17:39.869 I  pkd[80622:8bfc95] [com.apple.PlugInKit:discovery] [d <private>] Candidate plugin count from LaunchServices: 2
+2026-09-30 06:17:39.869 Df pkd[80622:8bfc95] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 2
+2026-09-30 06:17:39.872 I  pkd[80622:8bfc95] [com.apple.PlugInKit:discovery] [d <private>] Candidate plugin count from LaunchServices: 1
+2026-09-30 06:17:39.872 Df pkd[80622:8bfc95] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 1
+
+__HERMES_CWD_6c553f54b366__/private/tmp/cert-probe__HERMES_CWD_6c553f54b366__

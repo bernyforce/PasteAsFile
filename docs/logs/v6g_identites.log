@@ -1,0 +1,71 @@
+=== IDENTITES CODESIGN ===
+     0 valid identities found
+rc=0
+=== CODESIGN NOTRE APPEX ===
+Executable=/Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex/Contents/MacOS/PasteAsFileFinder
+Identifier=org.pasteasfile.PasteAsFileFinder
+Format=bundle with Mach-O universal (x86_64 arm64)
+CodeDirectory v=20400 size=570 flags=0x2(adhoc) hashes=7+7 location=embedded
+VersionPlatform=1
+VersionMin=851968
+VersionSDK=1769472
+Hash type=sha256 size=32
+CandidateCDHash sha256=3943f2aa73dc3fb9a4eb1d57d83facd8491a9000
+CandidateCDHashFull sha256=3943f2aa73dc3fb9a4eb1d57d83facd8491a90008910e377d2964342d30a48d7
+Hash choices=sha256
+CMSDigest=3943f2aa73dc3fb9a4eb1d57d83facd8491a90008910e377d2964342d30a48d7
+CMSDigestType=2
+Executable Segment base=0
+Executable Segment limit=32768
+Executable Segment flags=0x1
+Page size=16384
+CDHash=3943f2aa73dc3fb9a4eb1d57d83facd8491a9000
+Signature=adhoc
+Info.plist entries=21
+TeamIdentifier=not set
+Sealed Resources version=2 rules=13 files=0
+Internal requirements count=0 size=12
+=== CODESIGN REF GOOGLE ===
+Executable=/Applications/Google Drive.app/Contents/Applications/FinderHelper.app/Contents/PlugIns/FinderSyncExtension.appex/Contents/MacOS/FinderSyncExtension
+Identifier=com.google.drivefs.finderhelper.findersync
+Format=bundle with Mach-O thin (arm64)
+CodeDirectory v=20500 size=183222 flags=0x10000(runtime) hashes=5714+7 location=embedded
+VersionPlatform=1
+VersionMin=851968
+VersionSDK=1704960
+Hash type=sha256 size=32
+CandidateCDHash sha256=e66362a5024cc903898ef1362054b6008b0853da
+CandidateCDHashFull sha256=e66362a5024cc903898ef1362054b6008b0853da716addc2ef7806bf534cab49
+Hash choices=sha256
+CMSDigest=e66362a5024cc903898ef1362054b6008b0853da716addc2ef7806bf534cab49
+CMSDigestType=2
+Executable Segment base=0
+Executable Segment limit=21954560
+Executable Segment flags=0x1
+Page size=4096
+CDHash=e66362a5024cc903898ef1362054b6008b0853da
+Signature size=8989
+Authority=Developer ID Application: Google LLC (EQHXZ8M8AV)
+=== CODESIGN NOTRE APP ===
+Executable=/Applications/PasteAsFile.app/Contents/MacOS/PasteAsFile
+Identifier=org.pasteasfile.PasteAsFile
+Format=app bundle with Mach-O universal (x86_64 arm64)
+CodeDirectory v=20400 size=468 flags=0x2(adhoc) hashes=4+7 location=embedded
+VersionPlatform=1
+VersionMin=851968
+VersionSDK=1769472
+Hash type=sha256 size=32
+CandidateCDHash sha256=82ed1aa82239946b7fdf3a2955350aff5f9b66d9
+CandidateCDHashFull sha256=82ed1aa82239946b7fdf3a2955350aff5f9b66d96e42bd0c8f0880a85afce838
+Hash choices=sha256
+CMSDigest=82ed1aa82239946b7fdf3a2955350aff5f9b66d96e42bd0c8f0880a85afce838
+CMSDigestType=2
+Executable Segment base=0
+Executable Segment limit=16384
+Executable Segment flags=0x1
+Page size=16384
+CDHash=82ed1aa82239946b7fdf3a2955350aff5f9b66d9
+Signature=adhoc
+Info.plist entries=20
+
+__HERMES_CWD_6c553f54b366__/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile__HERMES_CWD_6c553f54b366__

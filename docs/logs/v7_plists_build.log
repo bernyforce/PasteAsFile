@@ -1,0 +1,88 @@
+=== BUILT appex plist ===
+{
+  "BuildMachineOSBuild" => "25G83"
+  "CFBundleDevelopmentRegion" => "fr"
+  "CFBundleDisplayName" => "PasteAsFileFinder"
+  "CFBundleExecutable" => "PasteAsFileFinder"
+  "CFBundleIdentifier" => "org.pasteasfile.PasteAsFileFinder"
+  "CFBundleInfoDictionaryVersion" => "6.0"
+  "CFBundleName" => "PasteAsFileFinder"
+  "CFBundlePackageType" => "XPC!"
+  "CFBundleShortVersionString" => "1.0"
+  "CFBundleSupportedPlatforms" => [
+    0 => "MacOSX"
+  ]
+  "CFBundleVersion" => "1"
+  "DTCompiler" => "com.apple.compilers.llvm.clang.1_0"
+  "DTPlatformBuild" => "26A425"
+  "DTPlatformName" => "macosx"
+  "DTPlatformVersion" => "27.0"
+  "DTSDKBuild" => "26A425"
+  "DTSDKName" => "macosx27.0"
+  "DTXcode" => "2700"
+  "DTXcodeBuild" => "27A266a"
+  "LSMinimumSystemVersion" => "13.0"
+  "NSExtension" => {
+    "NSExtensionPointIdentifier" => "com.apple.FinderSync"
+    "NSExtensionPrincipalClass" => "PasteAsFileFinder.FinderSync"
+  }
+}
+=== BUILT app plist ===
+{
+  "BuildMachineOSBuild" => "25G83"
+  "CFBundleDevelopmentRegion" => "fr"
+  "CFBundleExecutable" => "PasteAsFile"
+  "CFBundleIdentifier" => "org.pasteasfile.PasteAsFile"
+  "CFBundleInfoDictionaryVersion" => "6.0"
+  "CFBundleName" => "PasteAsFile"
+  "CFBundlePackageType" => "APPL"
+  "CFBundleShortVersionString" => "1.0"
+  "CFBundleSupportedPlatforms" => [
+    0 => "MacOSX"
+  ]
+  "CFBundleVersion" => "1"
+  "DTCompiler" => "com.apple.compilers.llvm.clang.1_0"
+  "DTPlatformBuild" => "26A425"
+  "DTPlatformName" => "macosx"
+  "DTPlatformVersion" => "27.0"
+  "DTSDKBuild" => "26A425"
+  "DTSDKName" => "macosx27.0"
+  "DTXcode" => "2700"
+  "DTXcodeBuild" => "27A266a"
+  "LSMinimumSystemVersion" => "13.0"
+  "NSPrincipalClass" => "NSApplication"
+}
+=== SOURCE appex plist file ===
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleDevelopmentRegion</key><string>fr</string>
+<key>CFBundleDisplayName</key><string>PasteAsFileFinder</string>
+<key>CFBundleExecutable</key><string>$(EXECUTABLE_NAME)</string>
+<key>CFBundleIdentifier</key><string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+<key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+<key>CFBundleName</key><string>$(PRODUCT_NAME)</string>
+<key>CFBundlePackageType</key><string>XPC!</string>
+<key>CFBundleShortVersionString</key><string>1.0</string>
+<key>CFBundleVersion</key><string>1</string>
+<key>NSExtension</key><dict>
+<key>NSExtensionPointIdentifier</key><string>com.apple.FinderSync</string>
+<key>NSExtensionPrincipalClass</key><string>$(PRODUCT_MODULE_NAME).FinderSync</string>
+</dict>
+</dict></plist>
+=== SOURCE app plist file ===
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleDevelopmentRegion</key><string>fr</string>
+<key>CFBundleExecutable</key><string>$(EXECUTABLE_NAME)</string>
+<key>CFBundleIdentifier</key><string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+<key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+<key>CFBundleName</key><string>$(PRODUCT_NAME)</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleShortVersionString</key><string>1.0</string>
+<key>CFBundleVersion</key><string>1</string>
+<key>NSPrincipalClass</key><string>NSApplication</string>
+</dict></plist>
+
+__HERMES_CWD_6c553f54b366__/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile__HERMES_CWD_6c553f54b366__

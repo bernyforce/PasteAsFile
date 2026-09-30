@@ -1,0 +1,27 @@
+=== Info.plist appex ===
+{
+  "CFBundleDevelopmentRegion" => "fr"
+  "CFBundleDisplayName" => "PasteAsFileFinder"
+  "CFBundleExecutable" => "$(EXECUTABLE_NAME)"
+  "CFBundleIdentifier" => "$(PRODUCT_BUNDLE_IDENTIFIER)"
+  "CFBundleInfoDictionaryVersion" => "6.0"
+  "CFBundleName" => "$(PRODUCT_NAME)"
+  "CFBundlePackageType" => "XPC!"
+  "CFBundleShortVersionString" => "1.0"
+  "CFBundleVersion" => "1"
+  "NSExtension" => {
+    "NSExtensionPointIdentifier" => "com.apple.FinderSync"
+    "NSExtensionPrincipalClass" => "$(PRODUCT_MODULE_NAME).FinderSync"
+  }
+}
+=== exec ===
+total 512
+-rwxr-xr-x@ 1 bf  admin  259184 sept. 30 06:13 PasteAsFileFinder
+/Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex/Contents/MacOS/PasteAsFileFinder: Mach-O universal binary with 2 architectures: [x86_64:Mach-O 64-bit executable x86_64] [arm64:Mach-O 64-bit executable arm64]
+/Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex/Contents/MacOS/PasteAsFileFinder (for architecture x86_64):	Mach-O 64-bit executable x86_64
+/Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex/Contents/MacOS/PasteAsFileFinder (for architecture arm64):	Mach-O 64-bit executable arm64
+=== pluginkit -a -v ===
+rc=0
+=== ref OneDrive appex plist ===
+
+__HERMES_CWD_6c553f54b366__/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile__HERMES_CWD_6c553f54b366__

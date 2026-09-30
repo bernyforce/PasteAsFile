@@ -1,0 +1,25 @@
+--- lsregister: appex connu ? ---
+87
+--- spctl ---
+/Applications/PasteAsFile.app: rejected
+origin=PasteAsFile Local Dev
+--- profils provisionnement ---
+ls: /Users/bf/Library/Developer/Xcode/UserData/Provisioning Profiles/: No such file or directory
+ls: /Users/bf/Library/MobileDevice/Provisioning Profiles/: No such file or directory
+--- comptes Xcode ---
+0
+--- pkd log ---
+2026-09-30 06:17:39.866 Df pkd[80622:8bfc99] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 4
+2026-09-30 06:17:39.866 Df pkd[80622:8bfc6e] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 8
+2026-09-30 06:17:39.866 I  pkd[80622:8bfc95] [com.apple.PlugInKit:discovery] [d <private>] Candidate plugin count from LaunchServices: 25
+2026-09-30 06:17:39.866 Df pkd[80622:8bfc95] [com.apple.PlugInKit:unspecified] [u AF927DB2-4D4A-54BC-840F-56AF0CB574E1] [com.apple.share.System.set-account-picture(<private>)] issued sandbox extension for sub service: <private>
+2026-09-30 06:17:39.866 Df pkd[80622:8bfc95] [com.apple.PlugInKit:unspecified] [u AF927DB2-4D4A-54BC-840F-56AF0CB574E1] [com.apple.share.System.set-account-picture(<private>)] issued sandbox extension for sub service: <private>
+2026-09-30 06:17:39.866 I  pkd[80622:8bfc94] [com.apple.PlugInKit:discovery] [d <private>] Candidate plugin count from LaunchServices: 17
+2026-09-30 06:17:39.868 Df pkd[80622:8bfc94] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 17
+2026-09-30 06:17:39.868 Df pkd[80622:8bfc95] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 25
+2026-09-30 06:17:39.869 I  pkd[80622:8bfc95] [com.apple.PlugInKit:discovery] [d <private>] Candidate plugin count from LaunchServices: 2
+2026-09-30 06:17:39.869 Df pkd[80622:8bfc95] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 2
+2026-09-30 06:17:39.872 I  pkd[80622:8bfc95] [com.apple.PlugInKit:discovery] [d <private>] Candidate plugin count from LaunchServices: 1
+2026-09-30 06:17:39.872 Df pkd[80622:8bfc95] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 1
+
+__HERMES_CWD_6c553f54b366__/private/tmp/cert-probe__HERMES_CWD_6c553f54b366__

@@ -1,0 +1,112 @@
+=== REF Google Drive FinderSync Info.plist ===
+{
+  "BuildMachineOSBuild" => "25F80"
+  "CFBundleDevelopmentRegion" => "en"
+  "CFBundleExecutable" => "FinderSyncExtension"
+  "CFBundleIconFile" => "drive_fs.icns"
+  "CFBundleIdentifier" => "com.google.drivefs.finderhelper.findersync"
+  "CFBundleInfoDictionaryVersion" => "6.0"
+  "CFBundleName" => "Google Drive"
+  "CFBundlePackageType" => "XPC!"
+  "CFBundleShortVersionString" => "131.0"
+  "CFBundleSupportedPlatforms" => [
+    0 => "MacOSX"
+  ]
+  "CFBundleVersion" => "131.0.2"
+  "DTCompiler" => "com.apple.compilers.llvm.clang.1_0"
+  "DTPlatformBuild" => "25E251"
+  "DTPlatformName" => "macosx"
+  "DTPlatformVersion" => "26.4"
+  "DTSDKBuild" => "25E251"
+  "DTSDKName" => "macosx26.4"
+  "DTXcode" => "2641"
+  "DTXcodeBuild" => "17E202"
+  "LSMinimumSystemVersion" => "13.0.0"
+  "LSUIElement" => true
+  "NSExtension" => {
+    "NSExtensionAttributes" => {
+    }
+    "NSExtensionPointIdentifier" => "com.apple.FinderSync"
+    "NSExtensionPrincipalClass" => "DFSFinderSync"
+  }
+  "NSPrincipalClass" => "NSApplication"
+}
+=== REF OneDrive ===
+{
+  "BuildMachineOSBuild" => "24G830"
+  "CFBundleDevelopmentRegion" => "en"
+  "CFBundleDisplayName" => "OneDrive Finder Integration"
+  "CFBundleExecutable" => "FinderSync"
+  "CFBundleIdentifier" => "com.microsoft.OneDrive-mac.FinderSync"
+  "CFBundleInfoDictionaryVersion" => "6.0"
+  "CFBundleName" => "FinderSync"
+  "CFBundlePackageType" => "XPC!"
+  "CFBundleShortVersionString" => "26.163.0823"
+  "CFBundleSignature" => "????"
+  "CFBundleSupportedPlatforms" => [
+    0 => "MacOSX"
+  ]
+  "CFBundleVersion" => "26163.0823.0004"
+  "CSFlags" => 65536
+  "DTCompiler" => "com.apple.compilers.llvm.clang.1_0"
+  "DTPlatformBuild" => "25A352"
+  "DTPlatformName" => "macosx"
+  "DTPlatformVersion" => "26.0"
+  "DTSDKBuild" => "25A352"
+  "DTSDKName" => "macosx26.0"
+  "DTXcode" => "2600"
+  "DTXcodeBuild" => "17A324"
+  "LSMinimumSystemVersion" => "14.4"
+  "LSUIElement" => true
+  "NSExtension" => {
+    "NSExtensionAttributes" => {
+    }
+    "NSExtensionPointIdentifier" => "com.apple.FinderSync"
+    "NSExtensionPrincipalClass" => "FinderSync"
+  }
+  "NSHumanReadableCopyright" => "Copyright 2026 Microsoft Corporation. All rights reserved."
+  "NSPrincipalClass" => "NSApplication"
+}
+=== pkd/pluginkit log ===
+2026-09-30 06:14:32.314 Df pluginkit[78948:8bce83] [com.apple.xpc:connection] [0x9aed94000] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.daemon
+2026-09-30 06:14:32.314 Df pluginkit[78948:8bce85] [com.apple.xpc:connection] [0x9aed94140] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.agent
+2026-09-30 06:14:32.333 Df pkd[76314:8bcc7c] [com.apple.xpc:connection] [0x7d9213d80] invalidated because the client process (pid 78948) either cancelled the connection or exited
+2026-09-30 06:14:32.338 A  pluginkit[78951:8bce9c] pluginkit-match
+2026-09-30 06:14:32.338 Df pkd[76314:8bcd37] [com.apple.xpc:connection] [0x7d9213d80] activating connection: mach=false listener=false peer=true name=com.apple.pluginkit.pkd.peer[78951].0x7d9213d80
+2026-09-30 06:14:32.340 Df pkd[76314:8bcd37] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 2
+2026-09-30 06:14:32.340 Df pluginkit[78951:8bce9c] [com.apple.xpc:connection] [0x105122a10] activating connection: mach=true listener=false peer=false name=com.apple.pluginkit.pkd
+2026-09-30 06:14:32.342 A  pluginkit[78951:8bce9c] (libsystem_info.dylib) Retrieve User by ID
+2026-09-30 06:14:32.343 Df pluginkit[78951:8bce9c] [com.apple.xpc:connection] [0x105128020] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.daemon
+2026-09-30 06:14:32.343 Df pluginkit[78951:8bce9d] [com.apple.xpc:connection] [0x1051285e0] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.agent
+2026-09-30 06:14:32.352 Df pkd[76314:8bcd37] [com.apple.xpc:connection] [0x7d9213d80] invalidated because the client process (pid 78951) either cancelled the connection or exited
+2026-09-30 06:14:32.357 A  pluginkit[78953:8bcea3] pluginkit-match
+2026-09-30 06:14:32.357 Df pkd[76314:8bcd37] [com.apple.xpc:connection] [0x7d9213d80] activating connection: mach=false listener=false peer=true name=com.apple.pluginkit.pkd.peer[78953].0x7d9213d80
+2026-09-30 06:14:32.357 Df pkd[76314:8bcc7c] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 1
+2026-09-30 06:14:32.357 Df pluginkit[78953:8bcea3] [com.apple.xpc:connection] [0x101629e20] activating connection: mach=true listener=false peer=false name=com.apple.pluginkit.pkd
+2026-09-30 06:14:32.359 A  pluginkit[78953:8bcea3] (libsystem_info.dylib) Retrieve User by ID
+2026-09-30 06:14:32.359 Df pluginkit[78953:8bcea3] [com.apple.xpc:connection] [0x10162f740] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.daemon
+2026-09-30 06:14:32.359 Df pluginkit[78953:8bcea7] [com.apple.xpc:connection] [0x10162fd00] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.agent
+2026-09-30 06:14:32.368 Df pkd[76314:8bcc7c] [com.apple.xpc:connection] [0x7d9213d80] invalidated because the client process (pid 78953) either cancelled the connection or exited
+2026-09-30 06:14:36.711 Df pkd[76314:8bcd37] [com.apple.PlugInKit:unspecified] [u AD8332C1-6823-5253-B486-905CF6FE184F] [<private>(<private>)] issued sandbox extension for sub service: <private>
+2026-09-30 06:14:36.711 Df pkd[76314:8bcd37] [com.apple.PlugInKit:unspecified] [u 8EC18ABA-7AD8-5933-A434-9367DBE9F781] [<private>(<private>)] issued sandbox extension for sub service: <private>
+2026-09-30 06:14:36.711 Df pkd[76314:8bcd37] [com.apple.PlugInKit:unspecified] [u D053E938-258B-51C9-BCE3-965949A86C74] [<private>(<private>)] issued sandbox extension for sub service: <private>
+2026-09-30 06:14:36.711 Df pkd[76314:8bcd37] [com.apple.PlugInKit:unspecified] [u 8007A16A-1EFD-5914-A335-145D34FBD93E] [<private>(<private>)] issued sandbox extension for sub service: <private>
+2026-09-30 06:14:36.711 Df pkd[76314:8bcd37] [com.apple.PlugInKit:unspecified] [u D0ED8736-7ED9-5A20-8B2D-CB274A479A2E] [<private>(<private>)] issued sandbox extension for sub service: <private>
+2026-09-30 06:14:36.712 Df pkd[76314:8bcd37] [com.apple.PlugInKit:discovery] [d <private>] Final plugin count: 5
+2026-09-30 06:14:36.712 Df pkd[76314:8bcc7c] [com.apple.launchservices:db] NotifyToken::RegisterDispatch(user.uid.501.com.apple.LaunchServices.database) fired for session key <private>
+2026-09-30 06:14:38.312 Df runningboardd[175:8bba0f] [com.apple.runningboard:ttl] Invalidating assertion 175-167-338185 (target:[app<application.org.pasteasfile.PasteAsFile.33535620.33535626(501)>:78930]) from originator [osservice<com.apple.WindowServer(88)>:167]
+2026-09-30 06:14:38.313 Df runningboardd[175:8bba0e] [com.apple.runningboard:ttl] Invalidating assertion 175-137-338183 (target:[app<application.org.pasteasfile.PasteAsFile.33535620.33535626(501)>:78930]) from originator [osservice<com.apple.coreservices.launchservicesd>:137]
+2026-09-30 06:14:38.398 Df runningboardd[175:8bb074] [com.apple.runningboard:process] [app<application.org.pasteasfile.PasteAsFile.33535620.33535626(501)>:78930] Ignoring jetsam update because this process is not memory-managed
+2026-09-30 06:14:38.398 Df runningboardd[175:8bb074] [com.apple.runningboard:process] [app<application.org.pasteasfile.PasteAsFile.33535620.33535626(501)>:78930] Ignoring suspend because this process is not lifecycle managed
+2026-09-30 06:14:38.398 Df runningboardd[175:8bb074] [com.apple.runningboard:ttl] [app<application.org.pasteasfile.PasteAsFile.33535620.33535626(501)>:78930] Set darwin role to: UserInteractiveNonFocal
+2026-09-30 06:14:38.398 Df runningboardd[175:8bb074] [com.apple.runningboard:process] [app<application.org.pasteasfile.PasteAsFile.33535620.33535626(501)>:78930] Ignoring GPU update because this process is not GPU managed
+2026-09-30 06:14:38.398 Df runningboardd[175:8bb074] [com.apple.runningboard:process] [app<application.org.pasteasfile.PasteAsFile.33535620.33535626(501)>:78930] Ignoring memory limit update because this process is not memory-managed
+2026-09-30 06:14:38.398 Df runningboardd[175:8bb074] [com.apple.runningboard:monitor] Calculated state for app<application.org.pasteasfile.PasteAsFile.33535620.33535626(501)>: running-active (role: UserInteractiveNonFocal) (endowments: <private>)
+2026-09-30 06:14:38.400 Df gamepolicyd[387:8bc519] [com.apple.runningboard:monitor] Received state update for 78930 (app<application.org.pasteasfile.PasteAsFile.33535620.33535626(501)>, running-active-NotVisible
+2026-09-30 06:14:38.439 Df tccd[168:8bd092] [com.apple.TCC:access] AUTHREQ_ATTRIBUTION: msgID=167.1508, attribution={accessing={TCCDProcess: identifier=org.pasteasfile.PasteAsFile, pid=78930, auid=501, euid=501, binary_path=/Applications/PasteAsFile.app/Contents/MacOS/PasteAsFile}, requesting={TCCDProcess: identifier=com.apple.WindowServer, pid=167, auid=88, euid=88, binary_path=/System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/Resources/WindowServer}, },
+2026-09-30 06:14:38.439 Df tccd[168:8bd092] [com.apple.TCC:access] requestor: TCCDProcess: identifier=com.apple.WindowServer, pid=167, auid=88, euid=88, binary_path=/System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/Resources/WindowServer is checking access for accessor TCCDProcess: identifier=org.pasteasfile.PasteAsFile, pid=78930, auid=501, euid=501, binary_path=/Applications/PasteAsFile.app/Contents/MacOS/PasteAsFile
+2026-09-30 06:14:38.441 Df tccd[168:8bd092] [com.apple.TCC:access] AUTHREQ_SUBJECT: msgID=167.1508, subject=org.pasteasfile.PasteAsFile,
+2026-09-30 06:14:38.441 Df tccd[168:8bd092] [com.apple.TCC:access] -[TCCDAccessIdentity staticCode]: static code for: identifier org.pasteasfile.PasteAsFile, type: 0: 0xc6b184300 at /Applications/PasteAsFile.app
+2026-09-30 06:14:38.591 Df log[79004:8bd0d4] [com.apple.log:] log run noninteractively, parent: 78999 (bash), args: 'log' 'show' '--last' '5m' '--predicate' 'process == "pkd" OR process == "pluginkit" OR eventMessage CONTAINS "pasteasfile"' '--style' 'compact'
+
+__HERMES_CWD_6c553f54b366__/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile__HERMES_CWD_6c553f54b366__

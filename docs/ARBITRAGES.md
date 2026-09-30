@@ -1,9 +1,14 @@
 # Arbitrages
 
 1. Dossier visé : priorité au dossier sélectionné pour que le clic sur un dossier colle dedans ; sinon dossier ciblé par Finder ; sinon parent de l'élément sélectionné. Ceci corrige la contradiction entre la formule simplifiée `targetedURL() ?? parent` et la demande « sur un dossier ».
-2. Extension limitée au dossier personnel récursif, conformément à `directoryURLs = [home]` fourni. Finder Sync ne couvre pas tous les volumes par défaut.
+2. Extension limitée au dossier personnel récursif (`directoryURLs = [home]`), conformément à la demande. Finder Sync ne couvre que les URL déclarées : en dehors du dossier personnel, l'entrée de menu n'apparaît pas.
 3. La logique du package Swift est compilée également comme source partagée de l'extension Xcode, sans dépendance externe ou duplication de règles.
 4. Les formats inconnus ne créent aucun fichier. Une représentation UTI présente est écrite telle quelle, même si son contenu est invalide ; aucune conversion ni sniffing.
-5. Signature ad hoc (`-`) pour usage local ; la distribution nécessite une signature d'identité et la notarisation. Sandbox extension explicitement désactivée comme demandé.
-6. Le repo se trouve dans un sous-dossier `PasteAsFile` du répertoire courant ; aucun push GitHub ni publication n'a été demandé.
-7. Licence Xcode locale non acceptée : aucune acceptation au nom de l'utilisateur ; verdict des commandes bloquées marqué NON VÉRIFIÉ, jamais PASS de convenance.
+5. Signature ad hoc (`-`) pour les artefacts du dépôt : elle suffit à `codesign --verify --deep --strict` (V5) mais **pas** à l'enregistrement par `pkd`, qui exige une identité délivrée par Apple (preuve brutale en `docs/logs/6a` à `6e` et `docs/VERDICT.md`, ÉTAPE 4). Sandbox de l'extension explicitement désactivée comme demandé (`com.apple.security.app-sandbox = false`).
+6. Le dépôt reste local ; aucun push GitHub ni publication n'a été demandé.
+7. Passe du 2026-09-29 : licence Xcode non acceptée, verdicts bloqués marqués NON VÉRIFIÉ. Cette passe mesure l'inverse : la licence est acceptée, `xcodebuild` renvoie `** BUILD SUCCEEDED **` pour les deux schémas ; la mention de licence n'apparaît plus dans les sorties brutes.
+8. Les produits de compilation sont écrits sur un volume local, hors du dossier Google Drive : Google Drive pose `com.apple.FinderInfo` et `com.apple.fileprovider.*`, et ces attributs font échouer la signature (`resource fork, Finder information, or similar detritus not allowed`, cf. `docs/logs/verification.log`, passe 06:11). Mesure appliquée : `swift build/test --scratch-path /tmp/pasteasfile-build/spm` et `xcodebuild … -derivedDataPath /tmp/pasteasfile-build/xcode` pour les builds tracés, DerivedData standard pour rejouer les commandes littérales de la mission. Aucun fichier temporaire n'est laissé dans le dépôt ; `build/` est ignoré par git.
+9. `pluginkit -r` est appliqué au seul appex du projet, jamais en global, afin de ne pas effacer les enregistrements ni les choix d'activation des extensions tierces déjà installées (Google Drive, OneDrive).
+10. Aucune signature n'est faite au nom de l'utilisateur et aucun certificat n'est conservé : une identité locale auto-signée a été créée, testée puis **supprimée** du trousseau (retour à `0 valid identities found`). `scripts/build-signed.sh` permet de refaire la chaîne complète avec une véritable identité Apple.
+11. Les journaux bruts des commandes sont versionnés dans `docs/logs/` (`commands.log` pour l'index chronologique) afin que chaque statut de `docs/VERDICT.md` soit rejouable.
+12. Le test d'acceptation au clic droit n'a pas été simulé : il dépend de l'enregistrement par `pkd`, refusé pour une cause externe. Il est déclaré N/A dans le verdict, jamais PASS.

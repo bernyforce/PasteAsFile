@@ -1,0 +1,46 @@
+Building for debugging...
+[1 / 4] PasteAsFileCoreTests-product
+Build complete! (0,26 s)
+Test Suite 'All tests' started at 2026-09-30 06:27:45.255.
+Test Suite 'PasteAsFileCoreTests.xctest' started at 2026-09-30 06:27:45.264.
+Test Suite 'PasteAsFileCoreTests' started at 2026-09-30 06:27:45.264.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testPasteboardPNGAndTIFFRaw]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testPasteboardPNGAndTIFFRaw]' passed (0.020 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT10ExactName]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT10ExactName]' passed (0.000 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT11Collisions]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT11Collisions]' passed (0.002 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT12RawBytesSHA256]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT12RawBytesSHA256]' passed (0.002 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT13FilesOverrideRawAndUniqued]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT13FilesOverrideRawAndUniqued]' passed (0.003 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT14RichTextPasteboardIntegration]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT14RichTextPasteboardIntegration]' passed (0.004 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT1Tiff]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT1Tiff]' passed (0.000 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT2Png]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT2Png]' passed (0.000 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT3Jpeg]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT3Jpeg]' passed (0.000 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT4Icns]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT4Icns]' passed (0.000 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT5Pdf]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT5Pdf]' passed (0.000 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT6RtfPriority]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT6RtfPriority]' passed (0.000 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT7Html]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT7Html]' passed (0.000 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT8Txt]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT8Txt]' passed (0.000 seconds).
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT9UnknownProducesNothing]' started.
+Test Case '-[PasteAsFileCoreTests.PasteAsFileCoreTests testT9UnknownProducesNothing]' passed (0.001 seconds).
+Test Suite 'PasteAsFileCoreTests' passed at 2026-09-30 06:27:45.297.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.031 (0.033) seconds
+Test Suite 'PasteAsFileCoreTests.xctest' passed at 2026-09-30 06:27:45.297.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.031 (0.033) seconds
+Test Suite 'All tests' passed at 2026-09-30 06:27:45.297.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.031 (0.042) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

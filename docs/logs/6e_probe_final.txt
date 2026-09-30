@@ -1,0 +1,12 @@
+--- codesign dv (copie intacte via ditto) ---
+--- probe enregistre ? (grep chemin ProbeCtrl) ---
+0
+--- findersync total ---
+ (2 plug-ins)
+--- nettoyage identite locale ---
+     0 valid identities found
+--- reinstalle l'artefact verifie (ad-hoc, tel que construit) ---
+install ad-hoc verifiee
+--- etat final pkd ---
+  (no matches)
+rc=0

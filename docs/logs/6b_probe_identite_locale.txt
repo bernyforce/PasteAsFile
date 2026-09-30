@@ -1,0 +1,7 @@
+/tmp/adhoc-probe/FinderSyncExtension.appex: replacing existing signature
+TeamIdentifier=not set
+--- match ---
+  (no matches)
+rc=0
+
+__HERMES_CWD_6c553f54b366__/private/tmp/cert-probe__HERMES_CWD_6c553f54b366__

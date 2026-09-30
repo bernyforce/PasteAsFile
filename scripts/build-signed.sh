@@ -1,0 +1,25 @@
+#!/bin/bash
+# Build Release signé avec une identité Apple, puis installation dans /Applications.
+#   CODE_SIGN_IDENTITY="Apple Development: Prénom Nom (TEAMID)" scripts/build-signed.sh
+#   (DEVELOPMENT_TEAM=XXXXXXXXXX en complément si l'identité n'expose pas l'équipe)
+set -euo pipefail
+cd "$(dirname "$0")/.." || exit 1
+: "${CODE_SIGN_IDENTITY:?Définissez CODE_SIGN_IDENTITY (identité Apple du trousseau : security find-identity -v -p codesigning)}"
+DERIVED="${PASTE_DERIVED:-/tmp/pasteasfile-build/xcode-signed}"
+rm -rf "$DERIVED"
+
+env DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild \
+    -project PasteAsFile.xcodeproj -scheme PasteAsFile -configuration Release \
+    -derivedDataPath "$DERIVED" \
+    CODE_SIGN_STYLE=Manual \
+    CODE_SIGN_IDENTITY="$CODE_SIGN_IDENTITY" \
+    ${DEVELOPMENT_TEAM:+DEVELOPMENT_TEAM="$DEVELOPMENT_TEAM"} \
+    build
+
+APP="$DERIVED/Build/Products/Release/PasteAsFile.app"
+codesign --verify --deep --strict --verbose=2 "$APP"
+rm -rf /Applications/PasteAsFile.app
+/usr/bin/ditto "$APP" /Applications/PasteAsFile.app
+codesign -dv /Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex 2>&1 | grep -E "Authority|TeamIdentifier"
+echo "installé : /Applications/PasteAsFile.app"
+echo "étape suivante : scripts/activate-extension.sh"

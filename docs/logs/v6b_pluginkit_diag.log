@@ -1,0 +1,18 @@
+++ LSREG=/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister
+++ /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f -R -trusted /Applications/PasteAsFile.app
+++ /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -dump
+++ grep -c PasteAsFile
+156
+++ /usr/bin/pluginkit -a /Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex
+++ echo '--- -m -A -D -v ---'
+--- -m -A -D -v ---
+++ /usr/bin/pluginkit -m -A -D -v
+++ grep -i -A3 -B3 pasteasfile
+++ echo '--- -m -p com.apple.FinderSync ---'
+--- -m -p com.apple.FinderSync ---
+++ /usr/bin/pluginkit -m -A -D -p com.apple.FinderSync
+     com.microsoft.OneDrive-mac.FinderSync(26.163.0823)
++    com.google.drivefs.finderhelper.findersync(131.0)
+++ set +x
+
+__HERMES_CWD_6c553f54b366__/Users/bf/Library/CloudStorage/GoogleDrive-bernynoussi@gmail.com/Mon Drive/Formation/Collège BDEB/ETE_2026/420-A60-BB ALGORITHMES D'APPRENTISSAGE PROFOND/Examen Final/PasteAsFile__HERMES_CWD_6c553f54b366__
