@@ -146,3 +146,24 @@ attendu et ne peut être fait que par l'utilisateur.
 
 Vu que le dépôt a été créé avant les modifications de cette passe, un second `git push` suit le commit final (Phase 3).
 
+## Phase Clôture Opérationnelle (2026-10-01) — Validation Réelle Computer Use et Publication Publique
+
+Passe finale d'automatisation GUI et de clôture définitive (intervention `14e36f12-6d8f-4546-8750-2300f33975b8`).
+
+| Contrôle | Statut | Preuve brute |
+|---|---|---|
+| A1 — Inventaire des appex | PASS | `DerivedData` et `/tmp` purgés ; 1 seule extension enregistrée dans pkd (`/Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex`) |
+| A2 — Purge chirurgicale | PASS | Réenregistrement unique sans doublon ; scripts de build sécurisés |
+| A3 — Observation GUI Réglages Système | PASS | Réglages Système > Général > Ouverture et extensions : 1 seule entrée `PasteAsFile` activée (`docs/logs/gui/a3_settings.png`) |
+| B1 — Copie d'image depuis Safari | PASS | Safari ouvert sur image de test locale, clic droit → « Copier l'image » (`docs/logs/gui/b1_safari_context_menu.png`) ; presse-papier vérifié contenant TIFF / PNG (`osascript -e 'clipboard info'`) |
+| B2 — Observation GUI Menu Finder | PASS | Clic droit dans le dossier personnel `~` (`/Users/bf`) : exactement 1 seule entrée « Coller à partir du presse-papier » dans le menu (`docs/logs/gui/b2_finder_menu.png`) |
+| B3 — Création effective et contrôle visuel | PASS | Clic sur le menu Finder → création sur disque de `/Users/bf/Collé 2026-10-01 à 17.44.37.png` (taille 268 octets, `PNG image data, 10 x 10, 8-bit/color RGBA`) ; ouverture dans Aperçu et vérification directe (`docs/logs/gui/b3_result.png`) |
+| B4 — Cas secondaires (collisions et RTF) | PASS | Cas texte riche testé : `/Users/bf/Collé 2026-10-01 à 17.50.24.rtf` créé avec le contenu RTF exact ; 15/15 tests unitaires verts (`swift test`) |
+| C1 — Garde-fous de purge scripts | PASS | `scripts/build-signed.sh` et `scripts/verify.sh` intègrent `cleanup_foreign_appex` au début et à la fin de chaque exécution |
+| C2 — Non-régression (2 builds consécutifs) | PASS | Deux exécutions consécutives de `build-signed.sh` + `activate-extension.sh` réussies (`rc=0`) avec maintien strict d'une seule entrée dans `pluginkit` (`BE6FACE3-0BE5-409A-8F8E-D33185B7B39C`) |
+| C3 — Documentation des pièges connus | PASS | Section « Pièges connus » ajoutée à `README.md` (DerivedData, purge des extensions multiples, exclusion de Google Drive) |
+| D1 — Dépôt GitHub public | PASS | `gh repo edit bernyforce/PasteAsFile --visibility public` → `{"url":"https://github.com/bernyforce/PasteAsFile","visibility":"PUBLIC"}` ; topics : `macos`, `finder`, `clipboard`, `swift`, `finder-extension` |
+| D2 — Contrôle sécurité à HEAD | PASS | `git grep -icE "feugankap" HEAD` = 0 ; identifiant personnel masqué `<AppleID-masque>` |
+| D3 — Verdict et clôture | PASS | `docs/VERDICT.md` complet avec captures GUI, commits synchronisés sur GitHub |
+
+

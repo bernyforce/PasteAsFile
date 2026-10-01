@@ -9,6 +9,15 @@ set -uo pipefail
 cd "$(dirname "$0")/.." || exit 1
 SCRATCH="${PASTE_SCRATCH:-/tmp/pasteasfile-build}"
 DEV="${DEVELOPER_DIR:-/Applications/Xcode.app/Contents/Developer}"
+cleanup_foreign_appex() {
+    find /tmp "$HOME/Library/Developer/Xcode/DerivedData" -name "PasteAsFileFinder.appex" 2>/dev/null | while read -r appex; do
+        if [[ "$appex" != /Applications/* ]]; then
+            pluginkit -r "$appex" 2>/dev/null || true
+            rm -rf "$appex" 2>/dev/null || true
+        fi
+    done
+}
+cleanup_foreign_appex
 mkdir -p "$SCRATCH" docs/logs
 failed=0
 run() {
@@ -39,4 +48,5 @@ else
 fi
 # Évite qu'une 2e copie de l'appex soit enregistrée par pkd après un run de vérification
 rm -rf "$APP"
+cleanup_foreign_appex
 exit "$failed"

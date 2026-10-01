@@ -20,6 +20,8 @@ if /usr/bin/codesign -dv "$APPX" 2>&1 | grep -q "TeamIdentifier=not set"; then
 fi
 
 # -r/‑a/‑e ciblent uniquement l'appex du projet : les extensions tierces ne sont pas touchées.
+/usr/bin/killall pkd 2>/dev/null || true
+sleep 1
 /usr/bin/pluginkit -r "$APPX"
 /usr/bin/pluginkit -a "$APPX"
 /usr/bin/pluginkit -e use -i "$BID"

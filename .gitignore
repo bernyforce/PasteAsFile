@@ -6,3 +6,4 @@ xcuserdata/
 .build/
 .agent-ledger.jsonl
 docs/logs/identity_raw.log
+.backups/

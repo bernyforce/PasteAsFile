@@ -74,6 +74,21 @@ Finder → cocher « PasteAsFileFinder », puis relancer le Finder.
 - Limite de conception : l'entrée de menu n'apparaît que dans le dossier personnel.
 - Le menu contextuel demande un clic dans une zone vide de la fenêtre ou sur un dossier.
 
+## Pièges connus
+
+1. **DerivedData et doublons d'enregistrement** : ne jamais laisser Xcode enregistrer un appex résiduel issu de `DerivedData`. En cas d'essai dans Xcode, exécuter systématiquement un *Clean Build Folder* (`Shift + Cmd + K`) pour éviter que `pkd` n'indexe plusieurs copies concurrentes.
+2. **Bloc de purge en cas d'entrées multiples** : si des entrées parasites apparaissent dans les Réglages Système ou le menu Finder, exécuter la commande de nettoyage chirurgical :
+   ```bash
+   rm -rf "$HOME/Library/Developer/Xcode/DerivedData"/PasteAsFile-*
+   find /tmp "$HOME/Library/Developer/Xcode/DerivedData" -name "PasteAsFileFinder.appex" 2>/dev/null | while read -r appex; do
+       pluginkit -r "$appex" 2>/dev/null || true
+   done
+   killall pkd Finder 2>/dev/null || true
+   /Applications/PasteAsFile.app/Contents/PlugIns/PasteAsFileFinder.appex/Contents/MacOS/PasteAsFileFinder -AppleLanguages '("fr")' 2>/dev/null &
+   scripts/activate-extension.sh
+   ```
+3. **Projet volontairement hors Google Drive** : conserver impérativement le dépôt hors de tout dossier synchronisé Google Drive. Drive dépose des attributs étendus `com.apple.FinderInfo` qui corrompent les signatures de code macOS (`resource fork, Finder information, or similar detritus not allowed`).
+
 ## Architecture
 
 - `PasteAsFile/` — application hôte ; `PasteAsFileFinder/` — extension Finder Sync ;

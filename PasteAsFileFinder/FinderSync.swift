@@ -4,7 +4,12 @@ import FinderSync
 final class FinderSync: FIFinderSync {
     override init() {
         super.init()
-        FIFinderSyncController.default().directoryURLs = [URL(fileURLWithPath: NSHomeDirectory(), isDirectory: true)]
+        var homeURL: URL?
+        if let pw = getpwuid(getuid()), let dir = pw.pointee.pw_dir {
+            homeURL = URL(fileURLWithPath: String(cString: dir), isDirectory: true)
+        }
+        let home = homeURL ?? URL(fileURLWithPath: "/Users/\(NSUserName())", isDirectory: true)
+        FIFinderSyncController.default().directoryURLs = [home]
     }
 
     override func menu(for menuKind: FIMenuKind) -> NSMenu {
@@ -26,11 +31,17 @@ final class FinderSync: FIFinderSync {
            let url = selected.first, (try? url.resourceValues(forKeys: [.isDirectoryKey]))?.isDirectory == true {
             return url
         }
-        return controller.targetedURL() ?? controller.selectedItemURLs()?.first?.deletingLastPathComponent()
+        return controller.targetedURL()
+            ?? controller.selectedItemURLs()?.first?.deletingLastPathComponent()
+            ?? controller.directoryURLs?.first
     }
 
     @IBAction func pasteFromClipboard(_ sender: AnyObject?) {
-        guard let destination = targetDirectory() else { return }
+        guard let destination = targetDirectory() else {
+            NSLog("PasteAsFile: paste aborted, no destination")
+            return
+        }
+        NSLog("PasteAsFile: pasteFromClipboard destination=%@", destination.path)
         let pb = NSPasteboard.general
         let urls = pb.readObjects(forClasses: [NSURL.self],
                                   options: [.urlReadingFileURLsOnly: true]) as? [URL] ?? []
@@ -45,6 +56,7 @@ final class FinderSync: FIFinderSync {
         }
         do {
             try PasteLogic.paste(fileURLs: urls, representations: representations, into: destination)
+            NSLog("PasteAsFile: paste succeeded into %@", destination.path)
         } catch {
             NSLog("PasteAsFile: paste failed: %@", error.localizedDescription)
         }

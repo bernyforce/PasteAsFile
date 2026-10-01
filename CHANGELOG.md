@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.0 — 2026-10-01
+
+- Clôture opérationnelle de bout en bout validée par computer use (preuves visuelles dans `docs/logs/gui/`).
+- Correction du bac à sable (App Sandbox) : portée FinderSync (`directoryURLs`) redirigée vers le dossier utilisateur réel `/Users/bf` (via `getpwuid` et exception entitlements).
+- Nettoyage chirurgical des doublons : 1 seule entrée observée dans Réglages Système et dans le menu contextuel du Finder.
+- Validation effective du clic droit : création automatique de fichiers images (`Collé ...png`) et textes (`Collé ...rtf`) à partir du presse-papier.
+- Robustesse et non-régression : enregistrement forcé LaunchServices (`lsregister`) et purge automatique (`cleanup_foreign_appex`) dans `build-signed.sh` et `activate-extension.sh` (2 builds consécutifs validés sans doublon).
+- Dépôt rendu public sur GitHub avec topics configurés.
+
 ## 0.1.3 — 2026-09-30
 
 - Migration définitive hors Google Drive : emplacement `/Users/bf/knowledge-share/projets-dev/PasteAsFile` (copie vérifiée HEAD/arbre identiques, ancien chemin mis à la Corbeille).
