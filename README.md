@@ -3,10 +3,15 @@
 Extension Finder Sync (macOS 13+) ajoutant l'entrée « Coller à partir du presse-papier » au menu
 contextuel du Finder, plus l'application hôte qui l'héberge.
 
+![Démonstration PasteAsFile](docs/assets/demo.gif)
+
+- **Guide complet d'utilisation** : [docs/GUIDE-UTILISATEUR.md](docs/GUIDE-UTILISATEUR.md)
+- **Rapport de vérification & preuves** : [docs/VERDICT.md](docs/VERDICT.md)
+
 ## Dépôt et emplacement (unique)
 
 - Emplacement canonique : `/Users/bf/knowledge-share/projets-dev/PasteAsFile`
-- Dépôt GitHub privé : https://github.com/bernyforce/PasteAsFile (`gh repo create PasteAsFile --private --source . --push`)
+- Dépôt GitHub public : https://github.com/bernyforce/PasteAsFile
 - Le dépôt a quitté Google Drive le 2026-09-30 : c'est ce qui supprime définitivement les conflits d'attributs `com.apple.FinderInfo` avec la signature.
 
 ## Comportement
